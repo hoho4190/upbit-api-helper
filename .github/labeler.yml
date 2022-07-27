@@ -1,0 +1,22 @@
+enable:
+  issues: false
+  prs: true
+
+labels:
+  'enhancement':
+    include:
+      - '\bfeat\b'
+      - '\brefactor\b'
+  'bug':
+    include:
+      - '\bfix\b'
+  'documentation':
+    include:
+      - '\bdocs\b'
+  'chore':
+    include:
+      - '\bbuild\b'
+      - '\bci\b'
+      - '\bstyle\b'
+      - '\btest\b'
+      - '\bchore\b'

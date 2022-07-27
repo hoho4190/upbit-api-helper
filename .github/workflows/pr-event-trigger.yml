@@ -1,0 +1,83 @@
+name: PR event trigger
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - closed
+
+env:
+  status_in_progress: 🏗 In progress
+  status_done: ✅ Done
+
+jobs:
+  pr_opened:
+    name: PR opened
+    runs-on: ubuntu-latest
+    if: github.event.action == 'opened'
+
+    steps:
+      - name: Move state of project to ${{ env.status_in_progress }}
+        uses: leonsteinhaeuser/project-beta-automations@v1.2.1
+        with:
+          gh_token: ${{ secrets.ACTION_PROJECT_BETA_AUTOMATIONS_TOKEN }}
+          user: ${{ github.repository_owner }}
+          project_id: ${{ secrets.PROJECT_ID }}
+          resource_node_id: ${{ github.event.pull_request.node_id }}
+          status_value: ${{ env.status_in_progress }}
+          
+      - name: Run auto labeler
+        if: github.base_ref == 'main'
+        id: labeler
+        uses: jimschubert/labeler-action@v2
+        with:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+      - name: Assign assignee to 🙆 ${{ github.actor }}
+        uses: toshimaru/auto-author-assign@v1.5.1
+          
+  pr_reopened:
+    name: PR reopened
+    runs-on: ubuntu-latest
+    if: github.event.action == 'reopened'
+
+    steps:
+      - name: Move state of project to ${{ env.status_in_progress }}
+        uses: leonsteinhaeuser/project-beta-automations@v1.2.1
+        with:
+          gh_token: ${{ secrets.ACTION_PROJECT_BETA_AUTOMATIONS_TOKEN }}
+          user: ${{ github.repository_owner }}
+          project_id: ${{ secrets.PROJECT_ID }}
+          resource_node_id: ${{ github.event.pull_request.node_id }}
+          status_value: ${{ env.status_in_progress }}
+
+      - name: Assign assignee to 🙆 ${{ github.actor }}
+        uses: toshimaru/auto-author-assign@v1.5.1
+
+  pr_closed:
+    name: PR closed
+    runs-on: ubuntu-latest
+    if: github.event.action == 'closed'
+
+    steps:
+      - name: Move state of project to ${{ env.status_done }}
+        uses: leonsteinhaeuser/project-beta-automations@v1.2.1
+        with:
+          gh_token: ${{ secrets.ACTION_PROJECT_BETA_AUTOMATIONS_TOKEN }}
+          user: ${{ github.repository_owner }}
+          project_id: ${{ secrets.PROJECT_ID }}
+          resource_node_id: ${{ github.event.pull_request.node_id }}
+          status_value: ${{ env.status_done }}
+
+  update_release_draft:
+    name: Update release draft
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.merged == true && github.base_ref == 'main'
+
+    steps:
+      - name: Update release draft
+        uses: release-drafter/release-drafter@v5.20.0
+        with:
+          config-name: release-drafter-config.yml
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

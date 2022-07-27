@@ -1,0 +1,47 @@
+name: Issue event trigger
+on:
+  issues:
+    types:
+      - opened
+      - reopened
+      - closed
+
+env:
+  status_new: 🆕 New
+  status_done: ✅ Done
+
+jobs:
+  issue_opened_or_reopened:
+    name: Issue opened or reopened
+    runs-on: ubuntu-latest
+    if: github.event.action == 'opened' || github.event.action == 'reopened'
+
+    steps:
+      - name: Move state of project to ${{ env.status_new }}
+        uses: leonsteinhaeuser/project-beta-automations@v1.2.1
+        with:
+          gh_token: ${{ secrets.ACTION_PROJECT_BETA_AUTOMATIONS_TOKEN }}
+          user: ${{ github.repository_owner }}
+          project_id: ${{ secrets.PROJECT_ID }}
+          resource_node_id: ${{ github.event.issue.node_id }}
+          status_value: ${{ env.status_new }}
+
+      - name: Assign assignee to 🙆 ${{ github.repository_owner }}
+        uses: pozil/auto-assign-issue@v1.8.0
+        with:
+          assignees: ${{ github.repository_owner }}
+
+  issue_closed:
+    name: Issue closed
+    runs-on: ubuntu-latest
+    if: github.event.action == 'closed'
+
+    steps:
+      - name: Move state of project to ${{ env.status_done }}
+        uses: leonsteinhaeuser/project-beta-automations@v1.2.1
+        with:
+          gh_token: ${{ secrets.ACTION_PROJECT_BETA_AUTOMATIONS_TOKEN }}
+          user: ${{ github.repository_owner }}
+          project_id: ${{ secrets.PROJECT_ID }}
+          resource_node_id: ${{ github.event.issue.node_id }}
+          status_value: ${{ env.status_done }}

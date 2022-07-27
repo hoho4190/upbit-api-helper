@@ -1,0 +1,51 @@
+name: Label Commenter
+
+on:
+  issues:
+    types: [labeled, unlabeled]
+  pull_request_target:
+    types: [labeled, unlabeled]
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+
+env:
+  status_in_progress: 🏗 In progress
+  status_done: ✅ Done
+
+# config에 설정한 라벨들을 job의 조건문으로 사용
+jobs:
+  comment:
+    runs-on: ubuntu-20.04
+    if: contains('invalid, wontfix, duplicate', github.event.label.name)
+
+    steps:
+      - name: Setting variables...
+        id: variable-setter
+        run: |
+          if [ ${{ github.event.action }} == "labeled" ]; then
+            echo "::set-output name=PROJECT_STATUS::${{ env.status_done }}"
+          else
+            echo "::set-output name=PROJECT_STATUS::${{ env.status_in_progress }}"
+          fi
+          if [ ${{ github.event_name }} == "issues" ]; then
+            echo "::set-output name=NODE_ID::${{ github.event.issue.node_id }}"
+          else
+            echo "::set-output name=NODE_ID::${{ github.event.pull_request.node_id }}"
+          fi
+
+      - name: Move state of project to ${{ steps.variable-setter.outputs.PROJECT_STATUS }}
+        uses: leonsteinhaeuser/project-beta-automations@v1.2.1
+        with:
+          gh_token: ${{ secrets.ACTION_PROJECT_BETA_AUTOMATIONS_TOKEN }}
+          user: ${{ github.repository_owner }}
+          project_id: ${{ secrets.PROJECT_ID }}
+          resource_node_id: ${{ steps.variable-setter.outputs.NODE_ID }}
+          status_value: ${{ steps.variable-setter.outputs.PROJECT_STATUS }}
+
+      - uses: actions/checkout@v3
+
+      - name: Label Commenter
+        uses: peaceiris/actions-label-commenter@v1.10.0
