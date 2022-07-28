@@ -1,0 +1,5 @@
+{
+  "api-manager": "https://api-manager.upbit.com/api/v1",
+  "project-team": "https://project-team.upbit.com/api/v1",
+  "api": "https://api.upbit.com/v1"
+}
