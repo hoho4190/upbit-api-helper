@@ -52,7 +52,7 @@ object BoardApi {
     )
 
     /**
-     * 프로젝트 공시 목록 조회
+     * 프로젝트 공시 조회
      *
      * offset 아래로(미만) perPage 만큼 조회
      *
