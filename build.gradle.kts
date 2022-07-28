@@ -40,7 +40,6 @@ repositories {
 dependencies {
     implementation(platform(kotlin("bom")))
     implementation(kotlin("stdlib-jdk8"))
-    implementation("io.github.microutils:kotlin-logging-jvm:2.1.23")
 
     // kotlinx-serialization
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.3")
@@ -74,6 +73,10 @@ tasks.jar {
 
 tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "1.8"
+}
+
+tasks.withType<KotlinCompile>().configureEach {
+    kotlinOptions.freeCompilerArgs += "-opt-in=kotlin.RequiresOptIn"
 }
 
 java {
