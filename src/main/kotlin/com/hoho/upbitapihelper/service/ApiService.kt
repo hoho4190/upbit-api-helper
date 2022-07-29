@@ -1,5 +1,6 @@
 package com.hoho.upbitapihelper.service
 
+import com.hoho.upbitapihelper.dto.exchange.Account
 import com.hoho.upbitapihelper.dto.quotation.*
 import com.hoho.upbitapihelper.util.EnumConverterFactory
 import com.hoho.upbitapihelper.util.RetrofitUtil
@@ -11,6 +12,7 @@ import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.create
 import retrofit2.http.GET
+import retrofit2.http.Header
 import retrofit2.http.Path
 import retrofit2.http.Query
 
@@ -36,6 +38,24 @@ internal interface ApiService {
                 .create()
         }
     }
+
+    /*
+    ==================================
+    ===  EXCHANGE API  ===============
+    ==================================
+     */
+
+    /**
+     * 자산 - 전체 계좌 조회
+     *
+     * 내가 보유한 자산 리스트를 보여줍니다.
+     *
+     * @param token Authorization token (JWT)
+     */
+    @GET("accounts")
+    fun getAccounts(
+        @Header("Authorization") token: String
+    ): Call<List<Account>>
 
     /*
     ==================================

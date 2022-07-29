@@ -2,7 +2,6 @@ package com.hoho.upbitapihelper.service
 
 import com.hoho.upbitapihelper.util.EnumConverterFactory
 import com.hoho.upbitapihelper.util.FileUtil
-import com.hoho.upbitapihelper.util.RetrofitUtil
 import com.hoho.upbitapihelper.util.TestUtil
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import kotlinx.serialization.ExperimentalSerializationApi
@@ -14,12 +13,13 @@ import org.junit.jupiter.api.*
 import retrofit2.Retrofit
 import retrofit2.create
 
-@DisplayName("Unit Test - Project Team Service")
-internal class ProjectTeamServiceTest {
+@DisplayName("Unit Test - Api Service(Exchange)")
+internal class ExchangeApiServiceTest {
 
-    private val mockDataPath = "mock-data/project-team"
+    private val mockDataPath = "mock-data/api/exchange"
+    private val token = "token"
 
-    private lateinit var ptService: ProjectTeamService
+    private lateinit var apiService: ApiService
     private lateinit var mockWebServer: MockWebServer
 
     @BeforeEach
@@ -30,7 +30,7 @@ internal class ProjectTeamServiceTest {
 
         val mockUrl = mockWebServer.url("/")
 
-        ptService = Retrofit.Builder()
+        apiService = Retrofit.Builder()
             .addConverterFactory(Json.asConverterFactory(MediaType.parse("application/json")!!))
             .addConverterFactory(EnumConverterFactory())
             .baseUrl(mockUrl)
@@ -44,42 +44,18 @@ internal class ProjectTeamServiceTest {
     }
 
     @Test
-    @DisplayName("프로젝트 공시 조회 - Success")
-    fun getDisclosuresSuccessTest() {
+    @DisplayName("자산 - 전체 계좌 조회 - Success")
+    fun getAccountsSuccessTest() {
         // Given
-        val mockBody = FileUtil.readResource("$mockDataPath/getDisclosures-success.json")
+        val mockBody = FileUtil.readResource("$mockDataPath/getAccounts-success.json")
         mockWebServer.enqueue(MockResponse().setBody(mockBody))
 
-        val perPage = 3
-        val offset: Int? = null
-        val region = "kr"
-
         // When
-        val callSync = ptService.getDisclosures(perPage, offset, region)
+        val callSync = apiService.getAccounts(token)
         val response = callSync.execute()
 
         // Then
         Assertions.assertTrue(response.isSuccessful)
         println(TestUtil.convertPrettyString(response.body()))
-    }
-
-    @Test
-    @DisplayName("프로젝트 공시 조회 - Failure")
-    fun getDisclosuresFailureTest() {
-        // Given
-        val mockBody = FileUtil.readResource("$mockDataPath/getDisclosures-failure.json")
-        mockWebServer.enqueue(MockResponse().setResponseCode(400).setBody(mockBody))
-
-        val perPage = 3
-        val offset: Int? = null
-        val region = "kr"
-
-        // When
-        val callSync = ptService.getDisclosures(perPage, offset, region)
-        val response = callSync.execute()
-
-        // Then
-        Assertions.assertFalse(response.isSuccessful)
-        println(TestUtil.convertPrettyString(RetrofitUtil.getErrorResponse(response)))
     }
 }

@@ -14,8 +14,10 @@ import org.junit.jupiter.api.*
 import retrofit2.Retrofit
 import retrofit2.create
 
-@DisplayName("Unit Test - Api Service")
-internal class ApiServiceTest {
+@DisplayName("Unit Test - Api Service(Quotation)")
+internal class QuotationApiServiceTest {
+
+    private val mockDataPath = "mock-data/api/quotation"
 
     private lateinit var apiService: ApiService
     private lateinit var mockWebServer: MockWebServer
@@ -45,7 +47,7 @@ internal class ApiServiceTest {
     @DisplayName("시세 종목 조회 - 마켓 코드 조회 - Success")
     fun getMarketAllSuccessTest() {
         // Given
-        val mockBody = FileUtil.readResource("mock-data/api/quotation/getMarketAll-success.json")
+        val mockBody = FileUtil.readResource("$mockDataPath/getMarketAll-success.json")
         mockWebServer.enqueue(MockResponse().setBody(mockBody))
 
         val isDetails = true
@@ -63,7 +65,7 @@ internal class ApiServiceTest {
     @DisplayName("시세 캔들 조회 - 분(Minute) 캔들 - Success")
     fun getCandlesMinutesSuccessTest() {
         // Given
-        val mockBody = FileUtil.readResource("mock-data/api/quotation/getCandlesMinutes-success.json")
+        val mockBody = FileUtil.readResource("$mockDataPath/getCandlesMinutes-success.json")
         mockWebServer.enqueue(MockResponse().setBody(mockBody))
 
         val unit: CandleUnit = CandleUnit.UNIT_60
@@ -84,7 +86,7 @@ internal class ApiServiceTest {
     @DisplayName("시세 캔들 조회 - 일(Day) 캔들 - Success")
     fun getCandlesDaysSuccessTest() {
         // Given
-        val mockBody = FileUtil.readResource("mock-data/api/quotation/getCandlesDays-success.json")
+        val mockBody = FileUtil.readResource("$mockDataPath/getCandlesDays-success.json")
         mockWebServer.enqueue(MockResponse().setBody(mockBody))
 
         val market = "BTC-ETH"
@@ -105,7 +107,7 @@ internal class ApiServiceTest {
     @DisplayName("시세 캔들 조회 - 주(Week) 캔들 - Success")
     fun getCandlesWeeksSuccessTest() {
         // Given
-        val mockBody = FileUtil.readResource("mock-data/api/quotation/getCandlesWeeks-success.json")
+        val mockBody = FileUtil.readResource("$mockDataPath/getCandlesWeeks-success.json")
         mockWebServer.enqueue(MockResponse().setBody(mockBody))
 
         val market = "BTC-ETH"
@@ -125,7 +127,7 @@ internal class ApiServiceTest {
     @DisplayName("시세 캔들 조회 - 월(Month) - Success")
     fun getCandlesMonthsSuccessTest() {
         // Given
-        val mockBody = FileUtil.readResource("mock-data/api/quotation/getCandlesMonths-success.json")
+        val mockBody = FileUtil.readResource("$mockDataPath/getCandlesMonths-success.json")
         mockWebServer.enqueue(MockResponse().setBody(mockBody))
 
         val market = "BTC-ETH"
@@ -145,7 +147,7 @@ internal class ApiServiceTest {
     @DisplayName("시세 체결 조회 - 최근 체결 내역 - Success")
     fun getTradesTicksSuccessTest() {
         // Given
-        val mockBody = FileUtil.readResource("mock-data/api/quotation/getTradesTicks-success.json")
+        val mockBody = FileUtil.readResource("$mockDataPath/getTradesTicks-success.json")
         mockWebServer.enqueue(MockResponse().setBody(mockBody))
 
         val market = "KRW-BTC"
@@ -167,7 +169,7 @@ internal class ApiServiceTest {
     @DisplayName("시세 Ticker 조회 - 현재가 정보 - Success")
     fun getTickerSuccessTest() {
         // Given
-        val mockBody = FileUtil.readResource("mock-data/api/quotation/getTicker-success.json")
+        val mockBody = FileUtil.readResource("$mockDataPath/getTicker-success.json")
         mockWebServer.enqueue(MockResponse().setBody(mockBody))
 
         val markets = "KRW-BTC, KRW-ETH"
@@ -185,7 +187,7 @@ internal class ApiServiceTest {
     @DisplayName("시세 호가 정보(Orderbook) 조회 - 호가 정보 조회 - Success")
     fun getOrderbookSuccessTest() {
         // Given
-        val mockBody = FileUtil.readResource("mock-data/api/quotation/getOrderbook-success.json")
+        val mockBody = FileUtil.readResource("$mockDataPath/getOrderbook-success.json")
         mockWebServer.enqueue(MockResponse().setBody(mockBody))
 
         val markets: List<String> = listOf(

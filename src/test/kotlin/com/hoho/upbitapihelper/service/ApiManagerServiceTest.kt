@@ -16,6 +16,8 @@ import retrofit2.create
 @DisplayName("Unit Test - Api Manager Service")
 internal class ApiManagerServiceTest {
 
+    private val mockDataPath = "mock-data/api-manager"
+
     private lateinit var amService: ApiManagerService
     private lateinit var mockWebServer: MockWebServer
 
@@ -44,7 +46,7 @@ internal class ApiManagerServiceTest {
     @DisplayName("공지사항 조회 - Success")
     fun getNoticesSuccessTest() {
         // Given
-        val mockBody = FileUtil.readResource("mock-data/api-manager/getNotices-success.json")
+        val mockBody = FileUtil.readResource("$mockDataPath/getNotices-success.json")
         mockWebServer.enqueue(MockResponse().setBody(mockBody))
 
         val page = 1
@@ -63,7 +65,7 @@ internal class ApiManagerServiceTest {
     @DisplayName("업비트 소식 조회 - Success")
     fun getNewsSuccessTest() {
         // Given
-        val mockBody = FileUtil.readResource("mock-data/api-manager/getNews-success.json")
+        val mockBody = FileUtil.readResource("$mockDataPath/getNews-success.json")
         mockWebServer.enqueue(MockResponse().setBody(mockBody))
 
         val page = 1
