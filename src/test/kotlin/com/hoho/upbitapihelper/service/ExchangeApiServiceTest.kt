@@ -1,7 +1,9 @@
 package com.hoho.upbitapihelper.service
 
 import com.hoho.upbitapihelper.dto.exchange.OrderBy
+import com.hoho.upbitapihelper.dto.exchange.OrderSide
 import com.hoho.upbitapihelper.dto.exchange.OrderState
+import com.hoho.upbitapihelper.dto.exchange.OrderType
 import com.hoho.upbitapihelper.util.EnumConverterFactory
 import com.hoho.upbitapihelper.util.FileUtil
 import com.hoho.upbitapihelper.util.TestUtil
@@ -144,6 +146,96 @@ internal class ExchangeApiServiceTest {
 
         // When
         val callSync = apiService.deleteOrder(token, uuid, null)
+        val response = callSync.execute()
+
+        // Then
+        Assertions.assertTrue(response.isSuccessful)
+        println(TestUtil.convertPrettyString(response.body()))
+    }
+
+    @Test
+    @DisplayName("주문 - 주문하기 - 지정가 매수 - Success")
+    fun postOrdersBidLimitSuccessTest() {
+        // Given
+        val mockBody = FileUtil.readResource("$mockDataPath/postOrdersBidLimit-success.json")
+        mockWebServer.enqueue(MockResponse().setBody(mockBody))
+
+        val params = HashMap<String, String>()
+        params["market"] = "KRW-BTC"
+        params["side"] = OrderSide.BID.value
+        params["ord_type"] = OrderType.LIMIT.value
+        params["price"] = "25000000"
+        params["volume"] = "0.0003"
+
+        // When
+        val callSync = apiService.postOrders(token, params)
+        val response = callSync.execute()
+
+        // Then
+        Assertions.assertTrue(response.isSuccessful)
+        println(TestUtil.convertPrettyString(response.body()))
+    }
+
+    @Test
+    @DisplayName("주문 - 주문하기 - 지정가 매도 - Success")
+    fun postOrdersAskLimitSuccessTest() {
+        // Given
+        val mockBody = FileUtil.readResource("$mockDataPath/postOrdersAskLimit-success.json")
+        mockWebServer.enqueue(MockResponse().setBody(mockBody))
+
+        val params = HashMap<String, String>()
+        params["market"] = "KRW-BTC"
+        params["side"] = OrderSide.ASK.value
+        params["ord_type"] = OrderType.LIMIT.value
+        params["price"] = "50000000"
+        params["volume"] = "0.00019184"
+
+        // When
+        val callSync = apiService.postOrders(token, params)
+        val response = callSync.execute()
+
+        // Then
+        Assertions.assertTrue(response.isSuccessful)
+        println(TestUtil.convertPrettyString(response.body()))
+    }
+
+    @Test
+    @DisplayName("주문 - 주문하기 - 시장가 매수 - Success")
+    fun postOrdersBidPriceSuccessTest() {
+        // Given
+        val mockBody = FileUtil.readResource("$mockDataPath/postOrdersBidPrice-success.json")
+        mockWebServer.enqueue(MockResponse().setBody(mockBody))
+
+        val params = HashMap<String, String>()
+        params["market"] = "KRW-BTC"
+        params["side"] = OrderSide.BID.value
+        params["ord_type"] = OrderType.PRICE.value
+        params["price"] = "6000"
+
+        // When
+        val callSync = apiService.postOrders(token, params)
+        val response = callSync.execute()
+
+        // Then
+        Assertions.assertTrue(response.isSuccessful)
+        println(TestUtil.convertPrettyString(response.body()))
+    }
+
+    @Test
+    @DisplayName("주문 - 주문하기 - 시장가 매도 - Success")
+    fun postOrdersAskMarketSuccessTest() {
+        // Given
+        val mockBody = FileUtil.readResource("$mockDataPath/postOrdersAskMarket-success.json")
+        mockWebServer.enqueue(MockResponse().setBody(mockBody))
+
+        val params = HashMap<String, String>()
+        params["market"] = "KRW-BTC"
+        params["side"] = OrderSide.ASK.value
+        params["ord_type"] = OrderType.MARKET.value
+        params["volume"] = "0.00019288"
+
+        // When
+        val callSync = apiService.postOrders(token, params)
         val response = callSync.execute()
 
         // Then

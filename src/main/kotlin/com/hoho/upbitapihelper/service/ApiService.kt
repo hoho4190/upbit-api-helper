@@ -145,6 +145,44 @@ internal interface ApiService {
     ): Call<Order>
 
     /**
+     * 주문 - 주문하기
+     *
+     * 주문 요청을 한다.
+     *
+     * 🚧 원화 마켓 가격 단위를 확인하세요.
+     *
+     * 원화 마켓에서 주문을 요청 할 경우, 원화 마켓 주문 가격 단위 를 확인하여 값을 입력해주세요.
+     *
+     * 🚧 identifier 파라미터 사용
+     *
+     * identifier는 서비스에서 발급하는 uuid가 아닌 이용자가 직접 발급하는 키값으로,
+     * 주문을 조회하기 위해 할당하는 값입니다.
+     * 해당 값은 사용자의 전체 주문 내 유일한 값을 전달해야하며,
+     * 비록 주문 요청시 오류가 발생하더라도 같은 값으로 다시 요청을 보낼 수 없습니다.
+     * 주문의 성공 / 실패 여부와 관계없이 중복해서 들어온 identifier 값에서는 중복 오류가 발생하니,
+     * 매 요청시 새로운 값을 생성해주세요.
+     *
+     * 🚧 시장가 주문
+     *
+     * 시장가 주문은 ord_type 필드를 price or market 으로 설정해야됩니다.
+     * 매수 주문의 경우 ord_type을 price로 설정하고 volume을 null 혹은 제외해야됩니다.
+     * 매도 주문의 경우 ord_type을 market로 설정하고 price을 null 혹은 제외해야됩니다.
+     *
+     * @param token Authorization token (JWT)
+     * @param params market: 마켓 ID,
+     *               side: 주문 종류 ,
+     *               volume: 주문량 (지정가, 시장가 매도 시 필수),
+     *               price: 주문 가격. (지정가, 시장가 매수 시 필수),
+     *               ordType: 주문 타입,
+     *               identifier: 조회용 사용자 지정 값(Unique 값 사용) (선택)
+     */
+    @POST("orders")
+    fun postOrders(
+        @Header("Authorization") token: String,
+        @Body params: HashMap<String, String>
+    ): Call<Order>
+
+    /**
      * 서비스 정보 - 입출금 현황
      *
      * 입출금 현황 및 블록 상태를 조회합니다.

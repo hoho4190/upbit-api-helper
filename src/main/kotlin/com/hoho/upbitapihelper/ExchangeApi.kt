@@ -298,6 +298,136 @@ object ExchangeApi {
     }
 
     /**
+     * 주문 - 주문하기 - 지정가 매수
+     *
+     * 주문 요청을 한다.
+     *
+     * @param apiKey
+     * @param market 마켓 ID (필수)
+     * @param price 주문 가격. (필수)
+     * @param volume 주문량 (필수)
+     * @param identifier 조회용 사용자 지정 값(Unique 값 사용) (선택)
+     */
+    @JvmStatic
+    @JvmOverloads
+    fun postOrdersBidLimit(
+        apiKey: OpenApiKey,
+        market: String,
+        price: String,
+        volume: String,
+        identifier: String? = null
+    ): Call<Order> {
+        val params = HashMap<String, String>()
+        params["market"] = market
+        params["side"] = OrderSide.BID.value
+        params["ord_type"] = OrderType.LIMIT.value
+        params["price"] = price
+        params["volume"] = volume
+        if (identifier != null) params["identifier"] = identifier
+
+        return apiService.postOrders(
+            RetrofitUtil.getAuthToken(apiKey, params),
+            params
+        )
+    }
+
+    /**
+     * 주문 - 주문하기 - 지정가 매도
+     *
+     * 주문 요청을 한다.
+     *
+     * @param apiKey
+     * @param market 마켓 ID (필수)
+     * @param price 주문 가격. (필수)
+     * @param volume 주문량 (필수)
+     * @param identifier 조회용 사용자 지정 값(Unique 값 사용) (선택)
+     */
+    @JvmStatic
+    @JvmOverloads
+    fun postOrdersAskLimit(
+        apiKey: OpenApiKey,
+        market: String,
+        price: String,
+        volume: String,
+        identifier: String? = null
+    ): Call<Order> {
+        val params = HashMap<String, String>()
+        params["market"] = market
+        params["side"] = OrderSide.ASK.value
+        params["ord_type"] = OrderType.LIMIT.value
+        params["price"] = price
+        params["volume"] = volume
+        if (identifier != null) params["identifier"] = identifier
+
+        return apiService.postOrders(
+            RetrofitUtil.getAuthToken(apiKey, params),
+            params
+        )
+    }
+
+    /**
+     * 주문 - 주문하기 - 시장가 매수
+     *
+     * 주문 요청을 한다.
+     *
+     * @param apiKey
+     * @param market 마켓 ID (필수)
+     * @param price 주문 가격. (필수)
+     * @param identifier 조회용 사용자 지정 값(Unique 값 사용) (선택)
+     */
+    @JvmStatic
+    @JvmOverloads
+    fun postOrdersBidPrice(
+        apiKey: OpenApiKey,
+        market: String,
+        price: String,
+        identifier: String? = null
+    ): Call<Order> {
+        val params = HashMap<String, String>()
+        params["market"] = market
+        params["side"] = OrderSide.BID.value
+        params["ord_type"] = OrderType.PRICE.value
+        params["price"] = price
+        if (identifier != null) params["identifier"] = identifier
+
+        return apiService.postOrders(
+            RetrofitUtil.getAuthToken(apiKey, params),
+            params
+        )
+    }
+
+    /**
+     * 주문 - 주문하기 - 시장가 매도
+     *
+     * 주문 요청을 한다.
+     *
+     * @param apiKey
+     * @param market 마켓 ID (필수)
+     * @param volume 주문량 (필수)
+     * @param identifier 조회용 사용자 지정 값(Unique 값 사용) (선택)
+     */
+    @JvmStatic
+    @JvmOverloads
+    fun postOrdersAskMarket(
+        apiKey: OpenApiKey,
+        market: String,
+        volume: String,
+        identifier: String? = null
+    ): Call<Order> {
+        val params = HashMap<String, String>()
+        params["market"] = market
+        params["side"] = OrderSide.ASK.value
+        params["ord_type"] = OrderType.MARKET.value
+        params["volume"] = volume
+        if (identifier != null) params["identifier"] = identifier
+
+        return apiService.postOrders(
+            RetrofitUtil.getAuthToken(apiKey, params),
+            params
+        )
+    }
+
+    /**
      * 서비스 정보 - 입출금 현황
      *
      * 입출금 현황 및 블록 상태를 조회합니다.

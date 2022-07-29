@@ -29,7 +29,6 @@ data class Order(
      * 주문 당시 화폐 가격
      *
      * NumberString
-     * TODO nullable 체크
      */
     val price: String? = null,
 
@@ -145,7 +144,6 @@ data class Order(
          * 체결 가격
          *
          * NumberString
-         * TODO nullable 체크
          */
         val price: String? = null,
 
@@ -162,6 +160,11 @@ data class Order(
          * NumberString
          */
         val funds: String,
+
+        /**
+         * FIXME 문서에 없음
+         */
+        val trend: String? = null,
 
         /**
          * 체결 종류

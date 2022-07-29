@@ -7,6 +7,7 @@ import com.hoho.upbitapihelper.dto.exchange.OrderState
 import com.hoho.upbitapihelper.util.RetrofitUtil
 import com.hoho.upbitapihelper.util.TestUtil
 import org.junit.jupiter.api.*
+import java.util.*
 
 @Disabled
 @DisplayName("E2E Test - Exchange API")
@@ -245,6 +246,121 @@ class ExchangeApiTest {
 
         // When
         val callSync = ExchangeApi.deleteOrderByIdentifier(openApiKey, identifier)
+        val response = callSync.execute()
+
+        // Then
+        println("url: ${response.raw().request().url()}")
+        if (response.isSuccessful) {
+            val result = response.body()
+            println(TestUtil.convertPrettyString(result))
+        } else {
+            val result: ErrorResponse? = RetrofitUtil.getErrorResponse(response)
+            println(TestUtil.convertPrettyString(result))
+        }
+        Assertions.assertTrue(response.isSuccessful)
+    }
+
+    @Disabled
+    @Test
+    @DisplayName("주문 - 주문하기 - 지정가 매수")
+    fun postOrdersBidLimitTest() {
+        // Given
+        val market = "KRW-BTC"
+        val price = "25000000"
+        val volume = "0.0003"
+        val identifier: String = UUID.randomUUID().toString()
+        println("지정가 매수 identifier=$identifier")
+
+        // When
+        val callSync = ExchangeApi.postOrdersBidLimit(openApiKey, market, price, volume, identifier)
+        val response = callSync.execute()
+
+        // Then
+        println("url: ${response.raw().request().url()}")
+        if (response.isSuccessful) {
+            val result = response.body()
+            println(TestUtil.convertPrettyString(result))
+        } else {
+            val result: ErrorResponse? = RetrofitUtil.getErrorResponse(response)
+            println(TestUtil.convertPrettyString(result))
+        }
+        Assertions.assertTrue(response.isSuccessful)
+    }
+
+    /**
+     * 지정가 매도
+     */
+    @Disabled
+    @Test
+    @DisplayName("주문 - 주문하기 - 지정가 매도")
+    fun postOrdersAskLimitTest() {
+        // Given
+        val market = "KRW-BTC"
+        val price = "50000000"
+        val volume = "0.00019184"
+        val identifier: String = UUID.randomUUID().toString()
+        println("지정가 매도 identifier=$identifier")
+
+        // When
+        val callSync = ExchangeApi.postOrdersAskLimit(openApiKey, market, price, volume, identifier)
+        val response = callSync.execute()
+
+        // Then
+        println("url: ${response.raw().request().url()}")
+        if (response.isSuccessful) {
+            val result = response.body()
+            println(TestUtil.convertPrettyString(result))
+        } else {
+            val result: ErrorResponse? = RetrofitUtil.getErrorResponse(response)
+            println(TestUtil.convertPrettyString(result))
+        }
+        Assertions.assertTrue(response.isSuccessful)
+    }
+
+    /**
+     * 시장가 매수
+     */
+    @Disabled
+    @Test
+    @DisplayName("주문 - 주문하기 - 시장가 매수")
+    fun postOrdersBidPriceTest() {
+        // Given
+        val market = "KRW-BTC"
+        val price = "6000"
+        val identifier: String = UUID.randomUUID().toString()
+        println("시장가 매수 identifier=$identifier")
+
+        // When
+        val callSync = ExchangeApi.postOrdersBidPrice(openApiKey, market, price, identifier)
+        val response = callSync.execute()
+
+        // Then
+        println("url: ${response.raw().request().url()}")
+        if (response.isSuccessful) {
+            val result = response.body()
+            println(TestUtil.convertPrettyString(result))
+        } else {
+            val result: ErrorResponse? = RetrofitUtil.getErrorResponse(response)
+            println(TestUtil.convertPrettyString(result))
+        }
+        Assertions.assertTrue(response.isSuccessful)
+    }
+
+    /**
+     * 시장가 매도
+     */
+    @Disabled
+    @Test
+    @DisplayName("주문 - 주문하기 - 시장가 매도")
+    fun postOrdersAskMarketTest() {
+        // Given
+        val market = "KRW-BTC"
+        val volume = "0.00019184"
+        val identifier: String = UUID.randomUUID().toString()
+        println("시장가 매도 identifier=$identifier")
+
+        // When
+        val callSync = ExchangeApi.postOrdersAskMarket(openApiKey, market, volume, identifier)
         val response = callSync.execute()
 
         // Then
