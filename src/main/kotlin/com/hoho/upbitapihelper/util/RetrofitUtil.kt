@@ -1,10 +1,14 @@
 package com.hoho.upbitapihelper.util
 
+import com.auth0.jwt.JWT
+import com.auth0.jwt.algorithms.Algorithm
 import com.hoho.upbitapihelper.dto.ApiUrlInfo
 import com.hoho.upbitapihelper.dto.ErrorResponse
+import com.hoho.upbitapihelper.dto.OpenApiKey
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
 import retrofit2.Response
+import java.util.*
 
 internal object RetrofitUtil {
 
@@ -33,6 +37,24 @@ internal object RetrofitUtil {
         }
 
         return apiUrlInfo
+    }
+
+    /**
+     * Get AuthToken.
+     *
+     * @param apiKey
+     * @return AuthToken
+     */
+    fun getAuthToken(
+        apiKey: OpenApiKey
+    ): String {
+        val algorithm: Algorithm = Algorithm.HMAC256(apiKey.secretKey)
+        val jwtToken = JWT.create()
+            .withClaim("access_key", apiKey.accessKey)
+            .withClaim("nonce", UUID.randomUUID().toString())
+            .sign(algorithm)
+
+        return "Bearer $jwtToken"
     }
 
     /**
