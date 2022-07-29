@@ -1,0 +1,43 @@
+{
+  "bid_fee": "0.0005",
+  "ask_fee": "0.0005",
+  "maker_bid_fee": "0.0005",
+  "maker_ask_fee": "0.0005",
+  "market": {
+    "id": "KRW-BTC",
+    "name": "BTC/KRW",
+    "order_types": [
+      "limit"
+    ],
+    "order_sides": [
+      "ask",
+      "bid"
+    ],
+    "bid": {
+      "currency": "KRW",
+      "min_total": 5000.0
+    },
+    "ask": {
+      "currency": "BTC",
+      "min_total": 5000.0
+    },
+    "max_total": "1000000000",
+    "state": "active"
+  },
+  "bid_account": {
+    "currency": "KRW",
+    "balance": "33918.28514766",
+    "locked": "0",
+    "avg_buy_price": "0",
+    "avg_buy_price_modified": true,
+    "unit_currency": "KRW"
+  },
+  "ask_account": {
+    "currency": "BTC",
+    "balance": "0",
+    "locked": "0",
+    "avg_buy_price": "78420000",
+    "avg_buy_price_modified": false,
+    "unit_currency": "KRW"
+  }
+}

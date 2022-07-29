@@ -1,8 +1,6 @@
 package com.hoho.upbitapihelper.service
 
-import com.hoho.upbitapihelper.dto.exchange.Account
-import com.hoho.upbitapihelper.dto.exchange.ApiKey
-import com.hoho.upbitapihelper.dto.exchange.WalletStatus
+import com.hoho.upbitapihelper.dto.exchange.*
 import com.hoho.upbitapihelper.dto.quotation.*
 import com.hoho.upbitapihelper.util.EnumConverterFactory
 import com.hoho.upbitapihelper.util.RetrofitUtil
@@ -13,10 +11,7 @@ import okhttp3.MediaType
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.create
-import retrofit2.http.GET
-import retrofit2.http.Header
-import retrofit2.http.Path
-import retrofit2.http.Query
+import retrofit2.http.*
 
 /**
  * 업비트 API
@@ -58,6 +53,96 @@ internal interface ApiService {
     fun getAccounts(
         @Header("Authorization") token: String
     ): Call<List<Account>>
+
+    /**
+     * 주문 - 주문 가능 정보
+     *
+     * 마켓별 주문 가능 정보를 확인한다.
+     *
+     * @param token Authorization token (JWT)
+     * @param market Market ID
+     */
+    @GET("orders/chance")
+    fun getOrdersChance(
+        @Header("Authorization") token: String,
+        @Query("market") market: String
+    ): Call<OrdersChance>
+
+    /**
+     * 주문 - 개별 주문 조회
+     *
+     * 주문 UUID or 조회용 사용자 지정 값을 통해 개별 주문건을 조회한다.
+     *
+     * 🚧 uuid 혹은 identifier 둘 중 하나의 값이 반드시 포함되어야 합니다.
+     *
+     * @param token Authorization token (JWT)
+     * @param uuid 주문 UUID
+     * @param identifier 조회용 사용자 지정 값
+     */
+    @GET("order")
+    fun getOrder(
+        @Header("Authorization") token: String,
+        @Query("uuid") uuid: String?,
+        @Query("identifier") identifier: String?
+    ): Call<Order>
+
+    /**
+     * 주문 - 주문 리스트 조회
+     *
+     * 주문 리스트를 조회한다.
+     *
+     * 🚧 states 파라미터 변경 안내 (2021. 03. 22 ~)
+     * 2021년 3월 22일부터 미체결 주문(wait, watch)과 완료 주문(done, cancel)을 혼합하여 조회하실 수 없습니다.
+     *
+     * 예시1) done, cancel 주문을 한 번에 조회 => 가능
+     *
+     * 예시2) wait, done 주문을 한 번에 조회 => 불가능 (각각 API 호출 필요)
+     *
+     * 자세한 내용은 개발자 센터 공지사항을 참조 부탁드립니다.
+     *
+     * uuids와 identifiers 동시에 쿼리 불가
+     *
+     * @param token Authorization token (JWT)
+     * @param market 마켓 아이디
+     * @param uuids 주문 UUID의 목록
+     * @param identifiers 주문 identifier의 목록
+     * @param state 주문 상태
+     * @param states 주문 상태의 목록.
+     *               미체결 주문(wait, watch)과 완료 주문(done, cancel)은 혼합하여 조회하실 수 없습니다.
+     * @param page 페이지 수, default: 1
+     * @param limit 요청 개수, default: 100
+     * @param orderBy 정렬 방식
+     */
+    @GET("orders")
+    fun getOrders(
+        @Header("Authorization") token: String,
+        @Query("market") market: String?,
+        @Query("uuids[]") uuids: List<String>?,
+        @Query("identifiers[]") identifiers: List<String>?,
+        @Query("state") state: OrderState?,
+        @Query("states[]") states: List<@JvmSuppressWildcards OrderState>?,
+        @Query("page") page: Int?,
+        @Query("limit") limit: Int?,
+        @Query("order_by") orderBy: OrderBy?
+    ): Call<List<Order>>
+
+    /**
+     * 주문 - 주문 취소 접수
+     *
+     * 주문 UUID or 조회용 사용자 지정 값을 통해 해당 주문에 대한 취소 접수를 한다.
+     *
+     * 🚧 uuid 혹은 identifier 둘 중 하나의 값이 반드시 포함되어야 합니다.
+     *
+     * @param token Authorization token (JWT)
+     * @param uuid 취소할 주문의 UUID
+     * @param identifier 조회용 사용자 지정 값
+     */
+    @DELETE("order")
+    fun deleteOrder(
+        @Header("Authorization") token: String,
+        @Query("uuid") uuid: String?,
+        @Query("identifier") identifier: String?
+    ): Call<Order>
 
     /**
      * 서비스 정보 - 입출금 현황
