@@ -1,0 +1,41 @@
+[
+  {
+    "market": "BTC-ETH",
+    "candle_date_time_utc": "2022-07-01T00:00:00",
+    "candle_date_time_kst": "2022-07-01T09:00:00",
+    "opening_price": 0.05354511,
+    "high_price": 0.0737,
+    "low_price": 0.05330115,
+    "trade_price": 0.07192431,
+    "timestamp": 1659061099682,
+    "candle_acc_trade_price": 104.24251641,
+    "candle_acc_trade_volume": 1677.9727936,
+    "first_day_of_period": "2022-07-01"
+  },
+  {
+    "market": "BTC-ETH",
+    "candle_date_time_utc": "2022-06-01T00:00:00",
+    "candle_date_time_kst": "2022-06-01T09:00:00",
+    "opening_price": 0.06160966,
+    "high_price": 0.06191679,
+    "low_price": 0.0483185,
+    "trade_price": 0.05350986,
+    "timestamp": 1656632474159,
+    "candle_acc_trade_price": 260.02609948,
+    "candle_acc_trade_volume": 4836.22688239,
+    "first_day_of_period": "2022-06-01"
+  },
+  {
+    "market": "BTC-ETH",
+    "candle_date_time_utc": "2022-05-01T00:00:00",
+    "candle_date_time_kst": "2022-05-01T09:00:00",
+    "opening_price": 0.07230656,
+    "high_price": 0.07661369,
+    "low_price": 0.06,
+    "trade_price": 0.06111675,
+    "timestamp": 1654036674095,
+    "candle_acc_trade_price": 186.92215855,
+    "candle_acc_trade_volume": 2706.71432473,
+    "first_day_of_period": "2022-05-01"
+  }
+]

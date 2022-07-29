@@ -1,0 +1,198 @@
+[
+  {
+    "market": "KRW-BTC",
+    "timestamp": 1659069581118,
+    "total_ask_size": 6.01117616,
+    "total_bid_size": 7.926420539999999,
+    "orderbook_units": [
+      {
+        "ask_price": 3.1462E7,
+        "bid_price": 3.146E7,
+        "ask_size": 0.12532731,
+        "bid_size": 5.27065253
+      },
+      {
+        "ask_price": 3.1464E7,
+        "bid_price": 3.1459E7,
+        "ask_size": 0.12428776,
+        "bid_size": 0.06571188
+      },
+      {
+        "ask_price": 3.1465E7,
+        "bid_price": 3.1458E7,
+        "ask_size": 0.25515622,
+        "bid_size": 0.03792761
+      },
+      {
+        "ask_price": 3.1466E7,
+        "bid_price": 3.1457E7,
+        "ask_size": 0.01584063,
+        "bid_size": 0.00255237
+      },
+      {
+        "ask_price": 3.1467E7,
+        "bid_price": 3.1455E7,
+        "ask_size": 0.02086024,
+        "bid_size": 0.03449618
+      },
+      {
+        "ask_price": 3.1476E7,
+        "bid_price": 3.1453E7,
+        "ask_size": 0.00430674,
+        "bid_size": 0.07859736
+      },
+      {
+        "ask_price": 3.1477E7,
+        "bid_price": 3.1452E7,
+        "ask_size": 0.92616147,
+        "bid_size": 0.09670656
+      },
+      {
+        "ask_price": 3.1478E7,
+        "bid_price": 3.145E7,
+        "ask_size": 0.01998232,
+        "bid_size": 0.12465167
+      },
+      {
+        "ask_price": 3.1482E7,
+        "bid_price": 3.1448E7,
+        "ask_size": 0.29192066,
+        "bid_size": 0.17457311
+      },
+      {
+        "ask_price": 3.1486E7,
+        "bid_price": 3.1447E7,
+        "ask_size": 1.75301718,
+        "bid_size": 0.59591649
+      },
+      {
+        "ask_price": 3.1488E7,
+        "bid_price": 3.1446E7,
+        "ask_size": 0.48604488,
+        "bid_size": 0.03536134
+      },
+      {
+        "ask_price": 3.1489E7,
+        "bid_price": 3.1445E7,
+        "ask_size": 0.921,
+        "bid_size": 3.1801E-4
+      },
+      {
+        "ask_price": 3.149E7,
+        "bid_price": 3.1444E7,
+        "ask_size": 0.98714304,
+        "bid_size": 0.31315185
+      },
+      {
+        "ask_price": 3.1494E7,
+        "bid_price": 3.1443E7,
+        "ask_size": 0.06012771,
+        "bid_size": 0.03180358
+      },
+      {
+        "ask_price": 3.1495E7,
+        "bid_price": 3.1442E7,
+        "ask_size": 0.02,
+        "bid_size": 1.064
+      }
+    ]
+  },
+  {
+    "market": "KRW-ETH",
+    "timestamp": 1659069581149,
+    "total_ask_size": 617.8603652500001,
+    "total_bid_size": 544.31205127,
+    "orderbook_units": [
+      {
+        "ask_price": 2275000.0,
+        "bid_price": 2274000.0,
+        "ask_size": 22.38289432,
+        "bid_size": 15.45842184
+      },
+      {
+        "ask_price": 2276000.0,
+        "bid_price": 2273000.0,
+        "ask_size": 143.0334284,
+        "bid_size": 6.69909438
+      },
+      {
+        "ask_price": 2277000.0,
+        "bid_price": 2272000.0,
+        "ask_size": 37.20125611,
+        "bid_size": 39.70319228
+      },
+      {
+        "ask_price": 2278000.0,
+        "bid_price": 2271000.0,
+        "ask_size": 89.05418316,
+        "bid_size": 68.34019641
+      },
+      {
+        "ask_price": 2279000.0,
+        "bid_price": 2270000.0,
+        "ask_size": 35.08544333,
+        "bid_size": 65.14649973
+      },
+      {
+        "ask_price": 2280000.0,
+        "bid_price": 2269000.0,
+        "ask_size": 24.76687377,
+        "bid_size": 62.59666529
+      },
+      {
+        "ask_price": 2281000.0,
+        "bid_price": 2268000.0,
+        "ask_size": 8.79127316,
+        "bid_size": 54.08459291
+      },
+      {
+        "ask_price": 2282000.0,
+        "bid_price": 2267000.0,
+        "ask_size": 18.79506393,
+        "bid_size": 42.59367153
+      },
+      {
+        "ask_price": 2283000.0,
+        "bid_price": 2266000.0,
+        "ask_size": 35.80630964,
+        "bid_size": 22.97298529
+      },
+      {
+        "ask_price": 2284000.0,
+        "bid_price": 2265000.0,
+        "ask_size": 62.1285992,
+        "bid_size": 15.51115701
+      },
+      {
+        "ask_price": 2285000.0,
+        "bid_price": 2264000.0,
+        "ask_size": 29.15950586,
+        "bid_size": 69.27148196
+      },
+      {
+        "ask_price": 2286000.0,
+        "bid_price": 2263000.0,
+        "ask_size": 4.53737551,
+        "bid_size": 9.29671428
+      },
+      {
+        "ask_price": 2287000.0,
+        "bid_price": 2262000.0,
+        "ask_size": 70.52207028,
+        "bid_size": 10.97054059
+      },
+      {
+        "ask_price": 2288000.0,
+        "bid_price": 2261000.0,
+        "ask_size": 15.78827427,
+        "bid_size": 15.87816531
+      },
+      {
+        "ask_price": 2289000.0,
+        "bid_price": 2260000.0,
+        "ask_size": 20.80781431,
+        "bid_size": 45.78867246
+      }
+    ]
+  }
+]

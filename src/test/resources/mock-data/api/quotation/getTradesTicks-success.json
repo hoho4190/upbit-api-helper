@@ -1,0 +1,38 @@
+[
+  {
+    "market": "KRW-BTC",
+    "trade_date_utc": "2022-07-27",
+    "trade_time_utc": "00:13:59",
+    "timestamp": 1658880839000,
+    "trade_price": 2.841E7,
+    "trade_volume": 0.02186843,
+    "prev_closing_price": 2.8401E7,
+    "change_price": 9000.0,
+    "ask_bid": "ASK",
+    "sequential_id": 1658880839000001
+  },
+  {
+    "market": "KRW-BTC",
+    "trade_date_utc": "2022-07-27",
+    "trade_time_utc": "00:13:59",
+    "timestamp": 1658880839000,
+    "trade_price": 2.8411E7,
+    "trade_volume": 0.01055929,
+    "prev_closing_price": 2.8401E7,
+    "change_price": 10000.0,
+    "ask_bid": "BID",
+    "sequential_id": 1658880839000000
+  },
+  {
+    "market": "KRW-BTC",
+    "trade_date_utc": "2022-07-27",
+    "trade_time_utc": "00:13:58",
+    "timestamp": 1658880838000,
+    "trade_price": 2.841E7,
+    "trade_volume": 0.00394291,
+    "prev_closing_price": 2.8401E7,
+    "change_price": 9000.0,
+    "ask_bid": "ASK",
+    "sequential_id": 1658880838000000
+  }
+]

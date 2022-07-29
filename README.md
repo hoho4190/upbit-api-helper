@@ -1,3 +1,5 @@
+[![Gradle Build](https://github.com/hoho4190/upbit-api-helper/actions/workflows/gradle-build.yml/badge.svg)](https://github.com/hoho4190/upbit-api-helper/actions/workflows/gradle-build.yml)
+
 # UPbit API Helper
 
 ## Reference
