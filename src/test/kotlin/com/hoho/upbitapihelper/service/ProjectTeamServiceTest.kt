@@ -45,7 +45,7 @@ internal class ProjectTeamServiceTest {
     @DisplayName("프로젝트 공시 조회 - Success")
     fun getDisclosuresSuccessTest() {
         // Given
-        val mockBody = FileUtil.readResource("mock-data/api-manager/getDisclosures-success.json")
+        val mockBody = FileUtil.readResource("mock-data/project-team/getDisclosures-success.json")
         mockWebServer.enqueue(MockResponse().setBody(mockBody))
 
         val perPage = 3
@@ -65,7 +65,7 @@ internal class ProjectTeamServiceTest {
     @DisplayName("프로젝트 공시 조회 - Failure")
     fun getDisclosuresFailureTest() {
         // Given
-        val mockBody = FileUtil.readResource("mock-data/api-manager/getDisclosures-failure.json")
+        val mockBody = FileUtil.readResource("mock-data/project-team/getDisclosures-failure.json")
         mockWebServer.enqueue(MockResponse().setResponseCode(400).setBody(mockBody))
 
         val perPage = 3

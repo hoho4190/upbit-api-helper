@@ -39,7 +39,6 @@ internal interface ApiManagerService {
      * @param page
      * @param perPage 기본 값: 20
      * @param threadName
-     * @return
      */
     @GET("notices")
     fun getNotices(
@@ -54,7 +53,6 @@ internal interface ApiManagerService {
      * @param page
      * @param perPage 기본 값: 20
      * @param threadName
-     * @return
      */
     @GET("notices")
     fun getNews(

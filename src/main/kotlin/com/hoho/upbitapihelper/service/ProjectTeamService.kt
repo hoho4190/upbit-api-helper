@@ -40,7 +40,6 @@ internal interface ProjectTeamService {
      * @param perPage
      * @param offset 조회의 기준이 되는 공시 아이디. 기본 값: null
      * @param region 기본 값: kr
-     * @return
      */
     @GET("disclosure")
     fun getDisclosures(
