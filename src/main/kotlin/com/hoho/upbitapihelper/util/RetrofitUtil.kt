@@ -8,6 +8,8 @@ import com.hoho.upbitapihelper.dto.OpenApiKey
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
 import retrofit2.Response
+import java.math.BigInteger
+import java.security.MessageDigest
 import java.util.*
 
 internal object RetrofitUtil {
@@ -55,6 +57,68 @@ internal object RetrofitUtil {
             .sign(algorithm)
 
         return "Bearer $jwtToken"
+    }
+
+    /**
+     * AuthToken 생성
+     *
+     * @param apiKey
+     * @param queryString key=value[&key=value]
+     * @return AuthToken
+     */
+    fun getAuthToken(
+        apiKey: OpenApiKey,
+        queryString: String
+    ): String {
+        val md: MessageDigest = MessageDigest.getInstance("SHA-512")
+        md.update(queryString.toByteArray(charset("UTF-8")))
+
+        val queryHash = String.format("%0128x", BigInteger(1, md.digest()))
+
+        val algorithm: Algorithm = Algorithm.HMAC256(apiKey.secretKey)
+        val jwtToken = JWT.create()
+            .withClaim("access_key", apiKey.accessKey)
+            .withClaim("nonce", UUID.randomUUID().toString())
+            .withClaim("query_hash", queryHash)
+            .withClaim("query_hash_alg", "SHA512")
+            .sign(algorithm)
+
+        return "Bearer $jwtToken"
+    }
+
+    /**
+     * AuthToken 생성
+     *
+     * @param apiKey
+     * @param queryElements
+     * @return AuthToken
+     */
+    fun getAuthToken(
+        apiKey: OpenApiKey,
+        queryElements: ArrayList<String>
+    ): String {
+        val queryString = java.lang.String.join("&", *queryElements.toTypedArray())
+
+        return getAuthToken(apiKey, queryString)
+    }
+
+    /**
+     * AuthToken 생성
+     *
+     * @param apiKey
+     * @param queryMap
+     * @return AuthToken
+     */
+    fun getAuthToken(
+        apiKey: OpenApiKey,
+        queryMap: HashMap<String, String>
+    ): String {
+        val queryElements = ArrayList<String>()
+        for ((key, value) in queryMap) {
+            queryElements.add("$key=$value")
+        }
+
+        return getAuthToken(apiKey, queryElements)
     }
 
     /**
