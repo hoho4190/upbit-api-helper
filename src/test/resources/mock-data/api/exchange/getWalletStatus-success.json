@@ -1,0 +1,1610 @@
+[
+  {
+    "currency": "BTC",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 747037,
+    "block_updated_at": "2022-07-29T05:57:41.936+00:00",
+    "block_elapsed_minutes": 25
+  },
+  {
+    "currency": "POWR",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "OMG",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "ETH",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "ETC",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15627155,
+    "block_updated_at": "2022-07-29T06:20:17.069+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "SNT",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "REP",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "STORJ",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "MTL",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "QTUM",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 2073491,
+    "block_updated_at": "2022-07-29T06:19:35.406+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "XRP",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 73326260,
+    "block_updated_at": "2022-07-29T06:20:20.264+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "BTG",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 749158,
+    "block_updated_at": "2022-07-29T06:18:51.059+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "WAVES",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 3226244,
+    "block_updated_at": "2022-07-29T06:20:13.643+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "MANA",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "WAXP",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 195232744,
+    "block_updated_at": "2022-07-29T06:20:20.778+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "ZRX",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "STEEM",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 66330706,
+    "block_updated_at": "2022-07-29T06:20:18.271+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "SBD",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 66330706,
+    "block_updated_at": "2022-07-29T06:20:18.271+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "EOS",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 259810050,
+    "block_updated_at": "2022-07-29T06:20:17.694+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "BAT",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "BNT",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "NMR",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "DNT",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "USDT",
+    "wallet_state": "unsupported",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "CVC",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "RLC",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "ADA",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 7558030,
+    "block_updated_at": "2022-07-29T06:19:06.367+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "TRX",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 42833480,
+    "block_updated_at": "2022-07-29T06:20:05.952+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "NEO",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 1936463,
+    "block_updated_at": "2022-07-29T06:20:08.435+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "TUSD",
+    "wallet_state": "unsupported",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "LRC",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "ARK",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 20964173,
+    "block_updated_at": "2022-07-29T06:19:30.509+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "ARDR",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 2437719,
+    "block_updated_at": "2022-07-29T06:19:15.519+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "LSK",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 19174899,
+    "block_updated_at": "2022-07-29T06:20:11.307+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "XEM",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 3825229,
+    "block_updated_at": "2022-07-29T06:18:50.070+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "GRS",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 4191248,
+    "block_updated_at": "2022-07-29T06:18:28.617+00:00",
+    "block_elapsed_minutes": 4
+  },
+  {
+    "currency": "ICX",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 53271651,
+    "block_updated_at": "2022-07-29T06:20:19.088+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "XLM",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 41972030,
+    "block_updated_at": "2022-07-29T06:19:57.548+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "SC",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 375779,
+    "block_updated_at": "2022-07-29T06:12:20.543+00:00",
+    "block_elapsed_minutes": 10
+  },
+  {
+    "currency": "ONT",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 14728670,
+    "block_updated_at": "2022-07-29T06:20:19.854+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "POLY",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "ELF",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 100977810,
+    "block_updated_at": "2022-07-29T06:19:25.421+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "EOSDAC",
+    "wallet_state": "withdraw_only",
+    "block_state": "normal",
+    "block_height": 259810050,
+    "block_updated_at": "2022-07-29T06:20:17.694+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "DOGE",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 4326256,
+    "block_updated_at": "2022-07-29T06:17:39.227+00:00",
+    "block_elapsed_minutes": 5
+  },
+  {
+    "currency": "GAS",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 1936463,
+    "block_updated_at": "2022-07-29T06:20:08.435+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "ZIL",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 2228257,
+    "block_updated_at": "2022-07-29T06:20:16.776+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "IOTA",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 3937914,
+    "block_updated_at": "2022-07-29T06:20:16.646+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "LOOM",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "BCH",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 750913,
+    "block_updated_at": "2022-07-29T06:15:39.240+00:00",
+    "block_elapsed_minutes": 7
+  },
+  {
+    "currency": "ADD",
+    "wallet_state": "withdraw_only",
+    "block_state": "normal",
+    "block_height": 259810050,
+    "block_updated_at": "2022-07-29T06:20:17.694+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "MFT",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "IOST",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 212128680,
+    "block_updated_at": "2022-07-29T06:20:15.242+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "RFR",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "IQ",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 259810050,
+    "block_updated_at": "2022-07-29T06:20:17.694+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "ONG",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 14728670,
+    "block_updated_at": "2022-07-29T06:20:19.854+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "RVN",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 2384140,
+    "block_updated_at": "2022-07-29T06:16:37.979+00:00",
+    "block_elapsed_minutes": 6
+  },
+  {
+    "currency": "DGB",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15488713,
+    "block_updated_at": "2022-07-29T06:20:13.347+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "UPP",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "ENJ",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "HORUS",
+    "wallet_state": "withdraw_only",
+    "block_state": "normal",
+    "block_height": 259810050,
+    "block_updated_at": "2022-07-29T06:20:17.694+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "MEETONE",
+    "wallet_state": "withdraw_only",
+    "block_state": "normal",
+    "block_height": 259810050,
+    "block_updated_at": "2022-07-29T06:20:17.694+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "GO",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 26506933,
+    "block_updated_at": "2022-07-29T06:20:16.544+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "CHL",
+    "wallet_state": "withdraw_only",
+    "block_state": "normal",
+    "block_height": 259810050,
+    "block_updated_at": "2022-07-29T06:20:17.694+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "BLACK",
+    "wallet_state": "withdraw_only",
+    "block_state": "normal",
+    "block_height": 259810050,
+    "block_updated_at": "2022-07-29T06:20:17.694+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "KNC",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "VET",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 12855348,
+    "block_updated_at": "2022-07-29T06:20:16.524+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "VTHO",
+    "wallet_state": "withdraw_only",
+    "block_state": "normal",
+    "block_height": 12855348,
+    "block_updated_at": "2022-07-29T06:20:16.524+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "MOC",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 97588555,
+    "block_updated_at": "2022-07-29T06:20:19.543+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "BSV",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 750320,
+    "block_updated_at": "2022-07-29T06:01:59.064+00:00",
+    "block_elapsed_minutes": 20
+  },
+  {
+    "currency": "SOLVE",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "THETA",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 16429556,
+    "block_updated_at": "2022-07-29T06:20:19.466+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "XTZ",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 2575031,
+    "block_updated_at": "2022-07-29T06:20:04.121+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "DENT",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "QKC",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 1779420,
+    "block_updated_at": "2022-07-29T06:20:04.807+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "IOTX",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 18685056,
+    "block_updated_at": "2022-07-29T06:20:15.626+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "BTT",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 42833480,
+    "block_updated_at": "2022-07-29T06:20:05.952+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "NKN",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 4290361,
+    "block_updated_at": "2022-07-29T06:20:03.611+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "META",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 46046233,
+    "block_updated_at": "2022-07-29T06:20:19.390+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "ANKR",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "CRO",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 6876711,
+    "block_updated_at": "2022-07-29T06:20:16.550+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "AERGO",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "TFUEL",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 16429556,
+    "block_updated_at": "2022-07-29T06:20:19.466+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "PLA",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "ORBS",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "BORA",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 97178640,
+    "block_updated_at": "2022-07-29T06:20:16.397+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "ACN",
+    "wallet_state": "withdraw_only",
+    "block_state": "normal",
+    "block_height": 33898140,
+    "block_updated_at": "2022-07-29T06:20:17.248+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "ATOM",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 11447535,
+    "block_updated_at": "2022-07-29T06:20:11.957+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "TT",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 107353895,
+    "block_updated_at": "2022-07-29T06:20:19.054+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "CRE",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "STPT",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "MKR",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "DAI",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "MBL",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 14728669,
+    "block_updated_at": "2022-07-29T06:20:17.850+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "FX",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "PROM",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "CHR",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "HBAR",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": null,
+    "block_updated_at": "2022-07-29T06:19:15.697+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "WIN",
+    "wallet_state": "withdraw_only",
+    "block_state": "normal",
+    "block_height": 42833480,
+    "block_updated_at": "2022-07-29T06:20:05.952+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "MED",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 6408125,
+    "block_updated_at": "2022-07-29T06:20:14.432+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "MLK",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 97588555,
+    "block_updated_at": "2022-07-29T06:20:19.543+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "CHZ",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "HIVE",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 66543598,
+    "block_updated_at": "2022-07-29T06:20:18.804+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "HBD",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 66543598,
+    "block_updated_at": "2022-07-29T06:20:18.804+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "XPR",
+    "wallet_state": "withdraw_only",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "OGN",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "OBSR",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 97178640,
+    "block_updated_at": "2022-07-29T06:20:16.397+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "DKA",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "STMX",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "AHT",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 97588550,
+    "block_updated_at": "2022-07-29T06:20:14.221+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "PCI",
+    "wallet_state": "paused",
+    "block_state": "normal",
+    "block_height": 42842150,
+    "block_updated_at": "2022-07-29T06:19:22.051+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "KAVA",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 885099,
+    "block_updated_at": "2022-07-29T06:20:19.263+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "LINK",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "JST",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 42833480,
+    "block_updated_at": "2022-07-29T06:20:05.952+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "RVC",
+    "wallet_state": "withdraw_only",
+    "block_state": "normal",
+    "block_height": 2372447,
+    "block_updated_at": "2022-07-29T06:18:44.509+00:00",
+    "block_elapsed_minutes": 4
+  },
+  {
+    "currency": "DAD",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "TON",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "CTSI",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "DOT",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 11369752,
+    "block_updated_at": "2022-07-29T06:20:18.989+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "ONIT",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "COMP",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "SXP",
+    "wallet_state": "paused",
+    "block_state": "inactive",
+    "block_height": 1174994,
+    "block_updated_at": "2022-07-15T15:04:41.897+00:00",
+    "block_elapsed_minutes": 19638
+  },
+  {
+    "currency": "HUNT",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "CRV",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "ALGO",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 22504397,
+    "block_updated_at": "2022-07-29T06:20:17.311+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "RSR",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "OXT",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "MARO",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 33898135,
+    "block_updated_at": "2022-07-29T06:20:17.345+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "SAND",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "SUN",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 42833480,
+    "block_updated_at": "2022-07-29T06:20:05.952+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "MVL",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "SRM",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "QTCON",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "AQT",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "AXS",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "STRAX",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 1167297,
+    "block_updated_at": "2022-07-29T06:20:03.245+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "GLM",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "FCT2",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 2694362,
+    "block_updated_at": "2022-07-29T06:20:17.991+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "SSX",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 97178640,
+    "block_updated_at": "2022-07-29T06:20:16.397+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "XYM",
+    "wallet_state": "withdraw_only",
+    "block_state": "delayed",
+    "block_height": 1436646,
+    "block_updated_at": "2022-07-29T06:20:14.956+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "FIL",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 2025630,
+    "block_updated_at": "2022-07-29T06:18:03.039+00:00",
+    "block_elapsed_minutes": 4
+  },
+  {
+    "currency": "UNI",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "BASIC",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "INJ",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "VAL",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 3729794,
+    "block_updated_at": "2022-07-29T06:19:52.981+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "PSG",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 17677414,
+    "block_updated_at": "2022-07-29T06:20:18.517+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "JUV",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 17677414,
+    "block_updated_at": "2022-07-29T06:20:18.517+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "CBK",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "ONX",
+    "wallet_state": "withdraw_only",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "MIR",
+    "wallet_state": "withdraw_only",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "FOR",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "BFC",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "LINA",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "HUM",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "STX",
+    "wallet_state": "working",
+    "block_state": "delayed",
+    "block_height": 69506,
+    "block_updated_at": "2022-07-29T06:16:01.555+00:00",
+    "block_elapsed_minutes": 6
+  },
+  {
+    "currency": "CELO",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 14281550,
+    "block_updated_at": "2022-07-29T06:20:07.108+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "GRT",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "LZM",
+    "wallet_state": "withdraw_only",
+    "block_state": "normal",
+    "block_height": 97588555,
+    "block_updated_at": "2022-07-29T06:20:19.543+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "AUCTION",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "DON",
+    "wallet_state": "withdraw_only",
+    "block_state": "normal",
+    "block_height": 212128680,
+    "block_updated_at": "2022-07-29T06:20:15.242+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "NEAR",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 70871240,
+    "block_updated_at": "2022-07-29T06:20:12.032+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "DAWN",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "FLOW",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 34249350,
+    "block_updated_at": "2022-07-29T06:19:38.059+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "PUNDIX",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "STRK",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "AAVE",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "SNX",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "APENFT",
+    "wallet_state": "withdraw_only",
+    "block_state": "normal",
+    "block_height": 42833480,
+    "block_updated_at": "2022-07-29T06:20:05.952+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "XEC",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 750375,
+    "block_updated_at": "2022-07-29T06:17:33.614+00:00",
+    "block_elapsed_minutes": 5
+  },
+  {
+    "currency": "MATIC",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "USDP",
+    "wallet_state": "unsupported",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "SGB",
+    "wallet_state": "withdraw_only",
+    "block_state": "normal",
+    "block_height": 20367301,
+    "block_updated_at": "2022-07-29T06:20:06.964+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "1INCH",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "GTC",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "LPT",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "MASK",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "NU",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "RAD",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "RLY",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "SOL",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 143614475,
+    "block_updated_at": "2022-07-29T06:19:59.760+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "QI",
+    "wallet_state": "withdraw_only",
+    "block_state": "normal",
+    "block_height": 2073491,
+    "block_updated_at": "2022-07-29T06:19:33.759+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "AUDIO",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "IMX",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "BOBA",
+    "wallet_state": "withdraw_only",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "ENS",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "YGG",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "WEMIX",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 97178640,
+    "block_updated_at": "2022-07-29T06:20:16.397+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "OCEAN",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "ARPA",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "CTC",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "SOLO",
+    "wallet_state": "withdraw_only",
+    "block_state": "normal",
+    "block_height": 73326260,
+    "block_updated_at": "2022-07-29T06:20:20.264+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "RNDR",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "API3",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "AVAX",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 17940600,
+    "block_updated_at": "2022-07-29T06:20:14.040+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "RAY",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 143614475,
+    "block_updated_at": "2022-07-29T06:19:59.760+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "T",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "REI",
+    "wallet_state": "working",
+    "block_state": "delayed",
+    "block_height": 6057096,
+    "block_updated_at": "2022-07-29T06:20:17.638+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "AQUA",
+    "wallet_state": "withdraw_only",
+    "block_state": "normal",
+    "block_height": 41972030,
+    "block_updated_at": "2022-07-29T06:19:57.548+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "AGLD",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "APE",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  },
+  {
+    "currency": "GMT",
+    "wallet_state": "working",
+    "block_state": "normal",
+    "block_height": 143614475,
+    "block_updated_at": "2022-07-29T06:19:59.760+00:00",
+    "block_elapsed_minutes": 2
+  },
+  {
+    "currency": "OGV",
+    "wallet_state": "withdraw_only",
+    "block_state": "normal",
+    "block_height": 15235730,
+    "block_updated_at": "2022-07-29T06:19:24.528+00:00",
+    "block_elapsed_minutes": 3
+  }
+]

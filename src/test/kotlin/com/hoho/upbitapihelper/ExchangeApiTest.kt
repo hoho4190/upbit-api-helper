@@ -40,4 +40,50 @@ class ExchangeApiTest {
         }
         Assertions.assertTrue(response.isSuccessful)
     }
+
+    @Disabled
+    @Test
+    @DisplayName("서비스 정보 - 입출금 현황")
+    fun getWalletStatusTest() {
+        // Given
+
+        // When
+        val callSync = ExchangeApi.getWalletStatus(openApiKey)
+        val response = callSync.execute()
+
+        // Then
+        println("url: ${response.raw().request().url()}")
+        if (response.isSuccessful) {
+            val result = response.body()
+            println("size: ${result!!.size}")
+            println(TestUtil.convertPrettyString(result))
+        } else {
+            val result: ErrorResponse? = RetrofitUtil.getErrorResponse(response)
+            println(TestUtil.convertPrettyString(result))
+        }
+        Assertions.assertTrue(response.isSuccessful)
+    }
+
+    @Disabled
+    @Test
+    @DisplayName("서비스 정보 - API 키 리스트 조회")
+    fun getApiKeysTest() {
+        // Given
+
+        // When
+        val callSync = ExchangeApi.getApiKeys(openApiKey)
+        val response = callSync.execute()
+
+        // Then
+        println("url: ${response.raw().request().url()}")
+        if (response.isSuccessful) {
+            val result = response.body()
+            println("size: ${result!!.size}")
+            println(TestUtil.convertPrettyString(result))
+        } else {
+            val result: ErrorResponse? = RetrofitUtil.getErrorResponse(response)
+            println(TestUtil.convertPrettyString(result))
+        }
+        Assertions.assertTrue(response.isSuccessful)
+    }
 }
