@@ -2,6 +2,8 @@ package com.hoho.upbitapihelper.service
 
 import com.hoho.upbitapihelper.util.EnumConverterFactory
 import com.hoho.upbitapihelper.util.FileUtil
+import com.hoho.upbitapihelper.util.RetrofitUtil
+import com.hoho.upbitapihelper.util.TestUtil
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.json.Json
@@ -56,5 +58,26 @@ internal class ProjectTeamServiceTest {
 
         // Then
         Assertions.assertTrue(response.isSuccessful)
+        println(TestUtil.convertPrettyString(response.body()))
+    }
+
+    @Test
+    @DisplayName("프로젝트 공시 조회 - Failure")
+    fun getDisclosuresFailureTest() {
+        // Given
+        val mockBody = FileUtil.readResource("mock-data/api-manager/getDisclosures-failure.json")
+        mockWebServer.enqueue(MockResponse().setResponseCode(400).setBody(mockBody))
+
+        val perPage = 3
+        val offset: Int? = null
+        val region = "kr"
+
+        // When
+        val callSync = ptService.getDisclosures(perPage, offset, region)
+        val response = callSync.execute()
+
+        // Then
+        Assertions.assertFalse(response.isSuccessful)
+        println(TestUtil.convertPrettyString(RetrofitUtil.getErrorResponse(response)))
     }
 }
