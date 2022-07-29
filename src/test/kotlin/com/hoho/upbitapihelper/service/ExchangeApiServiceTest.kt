@@ -58,4 +58,36 @@ internal class ExchangeApiServiceTest {
         Assertions.assertTrue(response.isSuccessful)
         println(TestUtil.convertPrettyString(response.body()))
     }
+
+    @Test
+    @DisplayName("서비스 정보 - 입출금 현황 - Success")
+    fun getWalletStatusSuccessTest() {
+        // Given
+        val mockBody = FileUtil.readResource("$mockDataPath/getWalletStatus-success.json")
+        mockWebServer.enqueue(MockResponse().setBody(mockBody))
+
+        // When
+        val callSync = apiService.getWalletStatus(token)
+        val response = callSync.execute()
+
+        // Then
+        Assertions.assertTrue(response.isSuccessful)
+        println(TestUtil.convertPrettyString(response.body()))
+    }
+
+    @Test
+    @DisplayName("서비스 정보 - API 키 리스트 조회 - Success")
+    fun getApiKeysSuccessTest() {
+        // Given
+        val mockBody = FileUtil.readResource("$mockDataPath/getApiKeys-success.json")
+        mockWebServer.enqueue(MockResponse().setBody(mockBody))
+
+        // When
+        val callSync = apiService.getApiKeys(token)
+        val response = callSync.execute()
+
+        // Then
+        Assertions.assertTrue(response.isSuccessful)
+        println(TestUtil.convertPrettyString(response.body()))
+    }
 }
