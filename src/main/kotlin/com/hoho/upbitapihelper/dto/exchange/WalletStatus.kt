@@ -18,13 +18,13 @@ data class WalletStatus(
      * 입출금 상태
      */
     @SerialName("wallet_state")
-    val walletState: String,
+    val walletState: WalletState,
 
     /**
      * 블록 상태
      */
     @SerialName("block_state")
-    val blockState: String,
+    val blockState: BlockState,
 
     /**
      * 블록 높이
