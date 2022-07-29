@@ -2,6 +2,7 @@ package com.hoho.upbitapihelper.service
 
 import com.hoho.upbitapihelper.util.EnumConverterFactory
 import com.hoho.upbitapihelper.util.FileUtil
+import com.hoho.upbitapihelper.util.TestUtil
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.json.Json
@@ -55,6 +56,7 @@ internal class ApiManagerServiceTest {
 
         // Then
         Assertions.assertTrue(response.isSuccessful)
+        println(TestUtil.convertPrettyString(response.body()))
     }
 
     @Test
@@ -73,5 +75,6 @@ internal class ApiManagerServiceTest {
 
         // Then
         Assertions.assertTrue(response.isSuccessful)
+        println(TestUtil.convertPrettyString(response.body()))
     }
 }

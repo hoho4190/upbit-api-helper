@@ -12,7 +12,7 @@ data class ErrorResponse(
 
     @Serializable
     data class Error(
-        val name: Int,
+        val name: String,
         val message: String
     )
 }
