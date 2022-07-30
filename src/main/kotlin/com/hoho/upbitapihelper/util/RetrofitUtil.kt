@@ -12,7 +12,7 @@ import java.math.BigInteger
 import java.security.MessageDigest
 import java.util.*
 
-internal object RetrofitUtil {
+object RetrofitUtil {
 
     private const val API_URL_INFO_RES_FILE_NAME = "api-url-info.json"
     val apiUrlInfo = parseApiUrlInfo()
