@@ -1,4 +1,6 @@
 [![Gradle Build](https://github.com/hoho4190/upbit-api-helper/actions/workflows/gradle-build.yml/badge.svg)](https://github.com/hoho4190/upbit-api-helper/actions/workflows/gradle-build.yml)
+[![Gradle Package](https://github.com/hoho4190/upbit-api-helper/actions/workflows/gradle-publish.yml/badge.svg)](https://github.com/hoho4190/upbit-api-helper/actions/workflows/gradle-publish.yml)
+[![](https://jitpack.io/v/hoho4190/upbit-api-helper.svg)](https://jitpack.io/#hoho4190/upbit-api-helper)
 
 # UPbit API Helper
 
@@ -46,6 +48,26 @@
 - [x] 프로젝트 공시 조회
 
 ## 사용
+### [Dependency 추가](https://jitpack.io/#hoho4190/upbit-api-helper)
+- Step 1. Add the JitPack repository to your build file
+  ```kotlin
+  allprojects {
+      repositories {
+          // ...
+          maven {
+              url = uri("https://jitpack.io")
+          }
+      }
+  }
+  ```
+- Step 2. Add the dependency
+  ```kotlin
+  dependencies {
+      implementation("com.github.hoho4190:upbit-api-helper:Tag")
+  }
+  ```
+
+### 예시
 
 - ex) 프로젝트 공시 조회
   ```kotlin
