@@ -9,7 +9,7 @@ plugins {
 }
 
 group = "com.hoho"
-version = "1.0.0"
+version = "1.0.1-SNAPSHOT"
 
 publishing {
     repositories {

@@ -68,6 +68,6 @@
   val market = "KRW-BTC"
   val price = "10000"
   
-  val callSync = ExchangeApi.postOrdersBidPrice(openApiKey, market, price, identifier)
+  val callSync = ExchangeApi.postOrdersBidPrice(openApiKey, market, price)
   val response = callSync.execute()
   ```
