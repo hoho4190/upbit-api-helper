@@ -264,7 +264,7 @@ object ExchangeApi {
     @JvmStatic
     fun deleteOrderByUuid(
         apiKey: OpenApiKey,
-        uuid: String?
+        uuid: String
     ): Call<Order> {
         val queryString = "uuid=$uuid"
 
@@ -286,7 +286,7 @@ object ExchangeApi {
     @JvmStatic
     fun deleteOrderByIdentifier(
         apiKey: OpenApiKey,
-        identifier: String?
+        identifier: String
     ): Call<Order> {
         val queryString = "identifier=$identifier"
 
