@@ -55,8 +55,8 @@ internal class ProjectTeamServiceTest {
         val region = "kr"
 
         // When
-        val callSync = ptService.getDisclosures(perPage, offset, region)
-        val response = callSync.execute()
+        val call = ptService.getDisclosures(perPage, offset, region)
+        val response = call.execute()
 
         // Then
         Assertions.assertTrue(response.isSuccessful)
@@ -75,8 +75,8 @@ internal class ProjectTeamServiceTest {
         val region = "kr"
 
         // When
-        val callSync = ptService.getDisclosures(perPage, offset, region)
-        val response = callSync.execute()
+        val call = ptService.getDisclosures(perPage, offset, region)
+        val response = call.execute()
 
         // Then
         Assertions.assertFalse(response.isSuccessful)

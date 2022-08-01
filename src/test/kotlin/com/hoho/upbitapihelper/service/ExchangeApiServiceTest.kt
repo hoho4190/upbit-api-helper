@@ -55,8 +55,8 @@ internal class ExchangeApiServiceTest {
         mockWebServer.enqueue(MockResponse().setBody(mockBody))
 
         // When
-        val callSync = apiService.getAccounts(token)
-        val response = callSync.execute()
+        val call = apiService.getAccounts(token)
+        val response = call.execute()
 
         // Then
         Assertions.assertTrue(response.isSuccessful)
@@ -73,8 +73,8 @@ internal class ExchangeApiServiceTest {
         val market = "KRW-BTC"
 
         // When
-        val callSync = apiService.getOrdersChance(token, market)
-        val response = callSync.execute()
+        val call = apiService.getOrdersChance(token, market)
+        val response = call.execute()
 
         // Then
         Assertions.assertTrue(response.isSuccessful)
@@ -91,8 +91,8 @@ internal class ExchangeApiServiceTest {
         val uuid = "uuid"
 
         // When
-        val callSync = apiService.getOrder(token, uuid, null)
-        val response = callSync.execute()
+        val call = apiService.getOrder(token, uuid, null)
+        val response = call.execute()
 
         // Then
         Assertions.assertTrue(response.isSuccessful)
@@ -124,11 +124,11 @@ internal class ExchangeApiServiceTest {
         orderBy = OrderBy.ASC
 
         // When
-        val callSync = apiService.getOrders(
+        val call = apiService.getOrders(
             token,
             market, uuids, null, state, states, page, limit, orderBy
         )
-        val response = callSync.execute()
+        val response = call.execute()
 
         // Then
         Assertions.assertTrue(response.isSuccessful)
@@ -145,8 +145,8 @@ internal class ExchangeApiServiceTest {
         val uuid = "uuid"
 
         // When
-        val callSync = apiService.deleteOrder(token, uuid, null)
-        val response = callSync.execute()
+        val call = apiService.deleteOrder(token, uuid, null)
+        val response = call.execute()
 
         // Then
         Assertions.assertTrue(response.isSuccessful)
@@ -168,8 +168,8 @@ internal class ExchangeApiServiceTest {
         params["volume"] = "0.0003"
 
         // When
-        val callSync = apiService.postOrders(token, params)
-        val response = callSync.execute()
+        val call = apiService.postOrders(token, params)
+        val response = call.execute()
 
         // Then
         Assertions.assertTrue(response.isSuccessful)
@@ -191,8 +191,8 @@ internal class ExchangeApiServiceTest {
         params["volume"] = "0.00019184"
 
         // When
-        val callSync = apiService.postOrders(token, params)
-        val response = callSync.execute()
+        val call = apiService.postOrders(token, params)
+        val response = call.execute()
 
         // Then
         Assertions.assertTrue(response.isSuccessful)
@@ -213,8 +213,8 @@ internal class ExchangeApiServiceTest {
         params["price"] = "6000"
 
         // When
-        val callSync = apiService.postOrders(token, params)
-        val response = callSync.execute()
+        val call = apiService.postOrders(token, params)
+        val response = call.execute()
 
         // Then
         Assertions.assertTrue(response.isSuccessful)
@@ -235,8 +235,8 @@ internal class ExchangeApiServiceTest {
         params["volume"] = "0.00019288"
 
         // When
-        val callSync = apiService.postOrders(token, params)
-        val response = callSync.execute()
+        val call = apiService.postOrders(token, params)
+        val response = call.execute()
 
         // Then
         Assertions.assertTrue(response.isSuccessful)
@@ -251,8 +251,8 @@ internal class ExchangeApiServiceTest {
         mockWebServer.enqueue(MockResponse().setBody(mockBody))
 
         // When
-        val callSync = apiService.getWalletStatus(token)
-        val response = callSync.execute()
+        val call = apiService.getWalletStatus(token)
+        val response = call.execute()
 
         // Then
         Assertions.assertTrue(response.isSuccessful)
@@ -267,8 +267,8 @@ internal class ExchangeApiServiceTest {
         mockWebServer.enqueue(MockResponse().setBody(mockBody))
 
         // When
-        val callSync = apiService.getApiKeys(token)
-        val response = callSync.execute()
+        val call = apiService.getApiKeys(token)
+        val response = call.execute()
 
         // Then
         Assertions.assertTrue(response.isSuccessful)
