@@ -57,8 +57,8 @@ internal class ApiManagerServiceTest {
         val response = call.execute()
 
         // Then
+        println(TestUtil.convertResToPrettyStr(response))
         Assertions.assertTrue(response.isSuccessful)
-        println(TestUtil.convertPrettyString(response.body()))
     }
 
     @Test
@@ -76,7 +76,7 @@ internal class ApiManagerServiceTest {
         val response = call.execute()
 
         // Then
+        println(TestUtil.convertResToPrettyStr(response))
         Assertions.assertTrue(response.isSuccessful)
-        println(TestUtil.convertPrettyString(response.body()))
     }
 }

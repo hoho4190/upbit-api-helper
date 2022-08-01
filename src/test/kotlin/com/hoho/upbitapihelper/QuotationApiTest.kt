@@ -1,8 +1,6 @@
 package com.hoho.upbitapihelper
 
-import com.hoho.upbitapihelper.dto.ErrorResponse
 import com.hoho.upbitapihelper.dto.quotation.CandleUnit
-import com.hoho.upbitapihelper.util.RetrofitUtil
 import com.hoho.upbitapihelper.util.TestUtil
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Disabled
@@ -29,10 +27,9 @@ internal class QuotationApiTest {
         if (response.isSuccessful) {
             val result = response.body()
             println("size: ${result!!.size}")
-            println(TestUtil.convertPrettyString(result))
+            println(TestUtil.convertResToPrettyStr(response))
         } else {
-            val result: ErrorResponse? = RetrofitUtil.getErrorResponse(response)
-            println(TestUtil.convertPrettyString(result))
+            println(TestUtil.convertResToPrettyStr(response))
         }
         Assertions.assertTrue(response.isSuccessful)
     }
@@ -56,10 +53,9 @@ internal class QuotationApiTest {
         if (response.isSuccessful) {
             val result = response.body()
             println("size: ${result!!.size}")
-            println(TestUtil.convertPrettyString(result))
+            println(TestUtil.convertResToPrettyStr(response))
         } else {
-            val result: ErrorResponse? = RetrofitUtil.getErrorResponse(response)
-            println(TestUtil.convertPrettyString(result))
+            println(TestUtil.convertResToPrettyStr(response))
         }
         Assertions.assertTrue(response.isSuccessful)
     }
@@ -83,10 +79,9 @@ internal class QuotationApiTest {
         if (response.isSuccessful) {
             val result = response.body()
             println("size: ${result!!.size}")
-            println(TestUtil.convertPrettyString(result))
+            println(TestUtil.convertResToPrettyStr(response))
         } else {
-            val result: ErrorResponse? = RetrofitUtil.getErrorResponse(response)
-            println(TestUtil.convertPrettyString(result))
+            println(TestUtil.convertResToPrettyStr(response))
         }
         Assertions.assertTrue(response.isSuccessful)
     }
@@ -109,10 +104,9 @@ internal class QuotationApiTest {
         if (response.isSuccessful) {
             val result = response.body()
             println("size: ${result!!.size}")
-            println(TestUtil.convertPrettyString(result))
+            println(TestUtil.convertResToPrettyStr(response))
         } else {
-            val result: ErrorResponse? = RetrofitUtil.getErrorResponse(response)
-            println(TestUtil.convertPrettyString(result))
+            println(TestUtil.convertResToPrettyStr(response))
         }
         Assertions.assertTrue(response.isSuccessful)
     }
@@ -135,10 +129,9 @@ internal class QuotationApiTest {
         if (response.isSuccessful) {
             val result = response.body()
             println("size: ${result!!.size}")
-            println(TestUtil.convertPrettyString(result))
+            println(TestUtil.convertResToPrettyStr(response))
         } else {
-            val result: ErrorResponse? = RetrofitUtil.getErrorResponse(response)
-            println(TestUtil.convertPrettyString(result))
+            println(TestUtil.convertResToPrettyStr(response))
         }
         Assertions.assertTrue(response.isSuccessful)
     }
@@ -163,10 +156,9 @@ internal class QuotationApiTest {
         if (response.isSuccessful) {
             val result = response.body()
             println("size: ${result!!.size}")
-            println(TestUtil.convertPrettyString(result))
+            println(TestUtil.convertResToPrettyStr(response))
         } else {
-            val result: ErrorResponse? = RetrofitUtil.getErrorResponse(response)
-            println(TestUtil.convertPrettyString(result))
+            println(TestUtil.convertResToPrettyStr(response))
         }
         Assertions.assertTrue(response.isSuccessful)
     }
@@ -187,10 +179,9 @@ internal class QuotationApiTest {
         if (response.isSuccessful) {
             val result = response.body()
             println("size: ${result!!.size}")
-            println(TestUtil.convertPrettyString(result))
+            println(TestUtil.convertResToPrettyStr(response))
         } else {
-            val result: ErrorResponse? = RetrofitUtil.getErrorResponse(response)
-            println(TestUtil.convertPrettyString(result))
+            println(TestUtil.convertResToPrettyStr(response))
         }
         Assertions.assertTrue(response.isSuccessful)
     }
@@ -214,10 +205,9 @@ internal class QuotationApiTest {
         if (response.isSuccessful) {
             val result = response.body()
             println("size: ${result!!.size}")
-            println(TestUtil.convertPrettyString(result))
+            println(TestUtil.convertResToPrettyStr(response))
         } else {
-            val result: ErrorResponse? = RetrofitUtil.getErrorResponse(response)
-            println(TestUtil.convertPrettyString(result))
+            println(TestUtil.convertResToPrettyStr(response))
         }
         Assertions.assertTrue(response.isSuccessful)
     }

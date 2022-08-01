@@ -7,7 +7,7 @@ import kotlinx.serialization.Serializable
  * API url info
  */
 @Serializable
-data class ApiUrlInfo(
+internal data class ApiUrlInfo(
 
     @SerialName("api-manager")
     var apiManager: String,

@@ -1,10 +1,8 @@
 package com.hoho.upbitapihelper
 
-import com.hoho.upbitapihelper.dto.ErrorResponse
 import com.hoho.upbitapihelper.dto.OpenApiKey
 import com.hoho.upbitapihelper.dto.exchange.OrderBy
 import com.hoho.upbitapihelper.dto.exchange.OrderState
-import com.hoho.upbitapihelper.util.RetrofitUtil
 import com.hoho.upbitapihelper.util.TestUtil
 import org.junit.jupiter.api.*
 import java.util.*
@@ -36,10 +34,9 @@ class ExchangeApiTest {
         if (response.isSuccessful) {
             val result = response.body()
             println("size: ${result!!.size}")
-            println(TestUtil.convertPrettyString(result))
+            println(TestUtil.convertResToPrettyStr(response))
         } else {
-            val result: ErrorResponse? = RetrofitUtil.getErrorResponse(response)
-            println(TestUtil.convertPrettyString(result))
+            println(TestUtil.convertResToPrettyStr(response))
         }
         Assertions.assertTrue(response.isSuccessful)
     }
@@ -57,13 +54,7 @@ class ExchangeApiTest {
 
         // Then
         println("url: ${response.raw().request().url()}")
-        if (response.isSuccessful) {
-            val result = response.body()
-            println(TestUtil.convertPrettyString(result))
-        } else {
-            val result: ErrorResponse? = RetrofitUtil.getErrorResponse(response)
-            println(TestUtil.convertPrettyString(result))
-        }
+        println(TestUtil.convertResToPrettyStr(response))
         Assertions.assertTrue(response.isSuccessful)
     }
 
@@ -80,13 +71,7 @@ class ExchangeApiTest {
 
         // Then
         println("url: ${response.raw().request().url()}")
-        if (response.isSuccessful) {
-            val result = response.body()
-            println(TestUtil.convertPrettyString(result))
-        } else {
-            val result: ErrorResponse? = RetrofitUtil.getErrorResponse(response)
-            println(TestUtil.convertPrettyString(result))
-        }
+        println(TestUtil.convertResToPrettyStr(response))
         Assertions.assertTrue(response.isSuccessful)
     }
 
@@ -103,13 +88,7 @@ class ExchangeApiTest {
 
         // Then
         println("url: ${response.raw().request().url()}")
-        if (response.isSuccessful) {
-            val result = response.body()
-            println(TestUtil.convertPrettyString(result))
-        } else {
-            val result: ErrorResponse? = RetrofitUtil.getErrorResponse(response)
-            println(TestUtil.convertPrettyString(result))
-        }
+        println(TestUtil.convertResToPrettyStr(response))
         Assertions.assertTrue(response.isSuccessful)
     }
 
@@ -141,8 +120,8 @@ class ExchangeApiTest {
 //            OrderState.WATCH
 //        )
         page = 1
-        limit = 100
-        orderBy = OrderBy.ASC
+        limit = 5
+        orderBy = OrderBy.DESC
 
         // When
         val call = ExchangeApi.getOrdersByUuid(
@@ -156,10 +135,9 @@ class ExchangeApiTest {
         if (response.isSuccessful) {
             val result = response.body()
             println("size: ${result!!.size}")
-            println(TestUtil.convertPrettyString(result))
+            println(TestUtil.convertResToPrettyStr(response))
         } else {
-            val result: ErrorResponse? = RetrofitUtil.getErrorResponse(response)
-            println(TestUtil.convertPrettyString(result))
+            println(TestUtil.convertResToPrettyStr(response))
         }
         Assertions.assertTrue(response.isSuccessful)
     }
@@ -206,10 +184,9 @@ class ExchangeApiTest {
         if (response.isSuccessful) {
             val result = response.body()
             println("size: ${result!!.size}")
-            println(TestUtil.convertPrettyString(result))
+            println(TestUtil.convertResToPrettyStr(response))
         } else {
-            val result: ErrorResponse? = RetrofitUtil.getErrorResponse(response)
-            println(TestUtil.convertPrettyString(result))
+            println(TestUtil.convertResToPrettyStr(response))
         }
         Assertions.assertTrue(response.isSuccessful)
     }
@@ -227,13 +204,7 @@ class ExchangeApiTest {
 
         // Then
         println("url: ${response.raw().request().url()}")
-        if (response.isSuccessful) {
-            val result = response.body()
-            println(TestUtil.convertPrettyString(result))
-        } else {
-            val result: ErrorResponse? = RetrofitUtil.getErrorResponse(response)
-            println(TestUtil.convertPrettyString(result))
-        }
+        println(TestUtil.convertResToPrettyStr(response))
         Assertions.assertTrue(response.isSuccessful)
     }
 
@@ -250,13 +221,7 @@ class ExchangeApiTest {
 
         // Then
         println("url: ${response.raw().request().url()}")
-        if (response.isSuccessful) {
-            val result = response.body()
-            println(TestUtil.convertPrettyString(result))
-        } else {
-            val result: ErrorResponse? = RetrofitUtil.getErrorResponse(response)
-            println(TestUtil.convertPrettyString(result))
-        }
+        println(TestUtil.convertResToPrettyStr(response))
         Assertions.assertTrue(response.isSuccessful)
     }
 
@@ -277,13 +242,7 @@ class ExchangeApiTest {
 
         // Then
         println("url: ${response.raw().request().url()}")
-        if (response.isSuccessful) {
-            val result = response.body()
-            println(TestUtil.convertPrettyString(result))
-        } else {
-            val result: ErrorResponse? = RetrofitUtil.getErrorResponse(response)
-            println(TestUtil.convertPrettyString(result))
-        }
+        println(TestUtil.convertResToPrettyStr(response))
         Assertions.assertTrue(response.isSuccessful)
     }
 
@@ -307,13 +266,7 @@ class ExchangeApiTest {
 
         // Then
         println("url: ${response.raw().request().url()}")
-        if (response.isSuccessful) {
-            val result = response.body()
-            println(TestUtil.convertPrettyString(result))
-        } else {
-            val result: ErrorResponse? = RetrofitUtil.getErrorResponse(response)
-            println(TestUtil.convertPrettyString(result))
-        }
+        println(TestUtil.convertResToPrettyStr(response))
         Assertions.assertTrue(response.isSuccessful)
     }
 
@@ -336,13 +289,7 @@ class ExchangeApiTest {
 
         // Then
         println("url: ${response.raw().request().url()}")
-        if (response.isSuccessful) {
-            val result = response.body()
-            println(TestUtil.convertPrettyString(result))
-        } else {
-            val result: ErrorResponse? = RetrofitUtil.getErrorResponse(response)
-            println(TestUtil.convertPrettyString(result))
-        }
+        println(TestUtil.convertResToPrettyStr(response))
         Assertions.assertTrue(response.isSuccessful)
     }
 
@@ -365,13 +312,7 @@ class ExchangeApiTest {
 
         // Then
         println("url: ${response.raw().request().url()}")
-        if (response.isSuccessful) {
-            val result = response.body()
-            println(TestUtil.convertPrettyString(result))
-        } else {
-            val result: ErrorResponse? = RetrofitUtil.getErrorResponse(response)
-            println(TestUtil.convertPrettyString(result))
-        }
+        println(TestUtil.convertResToPrettyStr(response))
         Assertions.assertTrue(response.isSuccessful)
     }
 
@@ -390,10 +331,9 @@ class ExchangeApiTest {
         if (response.isSuccessful) {
             val result = response.body()
             println("size: ${result!!.size}")
-            println(TestUtil.convertPrettyString(result))
+            println(TestUtil.convertResToPrettyStr(response))
         } else {
-            val result: ErrorResponse? = RetrofitUtil.getErrorResponse(response)
-            println(TestUtil.convertPrettyString(result))
+            println(TestUtil.convertResToPrettyStr(response))
         }
         Assertions.assertTrue(response.isSuccessful)
     }
@@ -413,10 +353,9 @@ class ExchangeApiTest {
         if (response.isSuccessful) {
             val result = response.body()
             println("size: ${result!!.size}")
-            println(TestUtil.convertPrettyString(result))
+            println(TestUtil.convertResToPrettyStr(response))
         } else {
-            val result: ErrorResponse? = RetrofitUtil.getErrorResponse(response)
-            println(TestUtil.convertPrettyString(result))
+            println(TestUtil.convertResToPrettyStr(response))
         }
         Assertions.assertTrue(response.isSuccessful)
     }

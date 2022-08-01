@@ -2,7 +2,6 @@ package com.hoho.upbitapihelper.service
 
 import com.hoho.upbitapihelper.util.EnumConverterFactory
 import com.hoho.upbitapihelper.util.FileUtil
-import com.hoho.upbitapihelper.util.RetrofitUtil
 import com.hoho.upbitapihelper.util.TestUtil
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import kotlinx.serialization.ExperimentalSerializationApi
@@ -59,8 +58,8 @@ internal class ProjectTeamServiceTest {
         val response = call.execute()
 
         // Then
+        println(TestUtil.convertResToPrettyStr(response))
         Assertions.assertTrue(response.isSuccessful)
-        println(TestUtil.convertPrettyString(response.body()))
     }
 
     @Test
@@ -79,7 +78,7 @@ internal class ProjectTeamServiceTest {
         val response = call.execute()
 
         // Then
+        println(TestUtil.convertResToPrettyStr(response))
         Assertions.assertFalse(response.isSuccessful)
-        println(TestUtil.convertPrettyString(RetrofitUtil.getErrorResponse(response)))
     }
 }
