@@ -1,6 +1,7 @@
 package com.hoho.upbitapihelper.service
 
 import com.hoho.upbitapihelper.dto.quotation.CandleUnit
+import com.hoho.upbitapihelper.dto.quotation.OrderBook
 import com.hoho.upbitapihelper.util.EnumConverterFactory
 import com.hoho.upbitapihelper.util.FileUtil
 import com.hoho.upbitapihelper.util.TestUtil
@@ -11,8 +12,7 @@ import okhttp3.MediaType
 import okhttp3.mockwebserver.MockResponse
 import okhttp3.mockwebserver.MockWebServer
 import org.junit.jupiter.api.*
-import retrofit2.Retrofit
-import retrofit2.create
+import retrofit2.*
 
 @DisplayName("Unit Test - Api Service(Quotation)")
 internal class QuotationApiServiceTest {
@@ -57,8 +57,8 @@ internal class QuotationApiServiceTest {
         val response = call.execute()
 
         // Then
+        println(TestUtil.convertResToPrettyStr(response))
         Assertions.assertTrue(response.isSuccessful)
-        println(TestUtil.convertPrettyString(response.body()))
     }
 
     @Test
@@ -78,8 +78,8 @@ internal class QuotationApiServiceTest {
         val response = call.execute()
 
         // Then
+        println(TestUtil.convertResToPrettyStr(response))
         Assertions.assertTrue(response.isSuccessful)
-        println(TestUtil.convertPrettyString(response.body()))
     }
 
     @Test
@@ -99,8 +99,8 @@ internal class QuotationApiServiceTest {
         val response = call.execute()
 
         // Then
+        println(TestUtil.convertResToPrettyStr(response))
         Assertions.assertTrue(response.isSuccessful)
-        println(TestUtil.convertPrettyString(response.body()))
     }
 
     @Test
@@ -119,8 +119,8 @@ internal class QuotationApiServiceTest {
         val response = call.execute()
 
         // Then
+        println(TestUtil.convertResToPrettyStr(response))
         Assertions.assertTrue(response.isSuccessful)
-        println(TestUtil.convertPrettyString(response.body()))
     }
 
     @Test
@@ -139,8 +139,8 @@ internal class QuotationApiServiceTest {
         val response = call.execute()
 
         // Then
+        println(TestUtil.convertResToPrettyStr(response))
         Assertions.assertTrue(response.isSuccessful)
-        println(TestUtil.convertPrettyString(response.body()))
     }
 
     @Test
@@ -161,8 +161,8 @@ internal class QuotationApiServiceTest {
         val response = call.execute()
 
         // Then
+        println(TestUtil.convertResToPrettyStr(response))
         Assertions.assertTrue(response.isSuccessful)
-        println(TestUtil.convertPrettyString(response.body()))
     }
 
     @Test
@@ -179,8 +179,8 @@ internal class QuotationApiServiceTest {
         val response = call.execute()
 
         // Then
+        println(TestUtil.convertResToPrettyStr(response))
         Assertions.assertTrue(response.isSuccessful)
-        println(TestUtil.convertPrettyString(response.body()))
     }
 
     @Test
@@ -200,7 +200,37 @@ internal class QuotationApiServiceTest {
         val response = call.execute()
 
         // Then
+        println(TestUtil.convertResToPrettyStr(response))
         Assertions.assertTrue(response.isSuccessful)
-        println(TestUtil.convertPrettyString(response.body()))
+    }
+
+    @Test
+    @DisplayName("시세 호가 정보(Orderbook) 조회 - 호가 정보 조회 - Success - async")
+    fun getOrderbookSuccessTest_async() {
+        // Given
+        val mockBody = FileUtil.readResource("$mockDataPath/getOrderbook-success.json")
+        mockWebServer.enqueue(MockResponse().setBody(mockBody))
+
+        val markets: List<String> = listOf(
+            "KRW-BTC",
+            "KRW-ETH"
+        )
+
+        // When
+        val call = apiService.getOrderbook(markets)
+        call.enqueue(object : Callback<List<OrderBook>> {
+
+            // Then
+            override fun onResponse(call: Call<List<OrderBook>>, response: Response<List<OrderBook>>) {
+                println(TestUtil.convertResToPrettyStr(response))
+                Assertions.assertTrue(response.isSuccessful)
+            }
+
+            override fun onFailure(call: Call<List<OrderBook>>, t: Throwable) {
+                t.printStackTrace()
+            }
+        })
+
+        Thread.sleep(1000L)
     }
 }
