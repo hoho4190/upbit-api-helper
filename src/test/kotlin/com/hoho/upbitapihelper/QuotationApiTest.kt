@@ -21,8 +21,8 @@ internal class QuotationApiTest {
         val isDetails = true
 
         // When
-        val callSync = QuotationApi.getMarketAll(isDetails)
-        val response = callSync.execute()
+        val call = QuotationApi.getMarketAll(isDetails)
+        val response = call.execute()
 
         // Then
         println("url: ${response.raw().request().url()}")
@@ -48,8 +48,8 @@ internal class QuotationApiTest {
         val count: Int? = 3
 
         // When
-        val callSync = QuotationApi.getCandlesMinutes(unit, market, to, count)
-        val response = callSync.execute()
+        val call = QuotationApi.getCandlesMinutes(unit, market, to, count)
+        val response = call.execute()
 
         // Then
         println("url: ${response.raw().request().url()}")
@@ -75,8 +75,8 @@ internal class QuotationApiTest {
         val convertingPriceUnit: String? = "KRW"
 
         // When
-        val callSync = QuotationApi.getCandlesDays(market, to, count, convertingPriceUnit)
-        val response = callSync.execute()
+        val call = QuotationApi.getCandlesDays(market, to, count, convertingPriceUnit)
+        val response = call.execute()
 
         // Then
         println("url: ${response.raw().request().url()}")
@@ -101,8 +101,8 @@ internal class QuotationApiTest {
         val count: Int? = 3
 
         // When
-        val callSync = QuotationApi.getCandlesWeeks(market, to, count)
-        val response = callSync.execute()
+        val call = QuotationApi.getCandlesWeeks(market, to, count)
+        val response = call.execute()
 
         // Then
         println("url: ${response.raw().request().url()}")
@@ -127,8 +127,8 @@ internal class QuotationApiTest {
         val count: Int? = 3
 
         // When
-        val callSync = QuotationApi.getCandlesMonths(market, to, count)
-        val response = callSync.execute()
+        val call = QuotationApi.getCandlesMonths(market, to, count)
+        val response = call.execute()
 
         // Then
         println("url: ${response.raw().request().url()}")
@@ -155,8 +155,8 @@ internal class QuotationApiTest {
         val daysAgo: Int? = 2
 
         // When
-        val callSync = QuotationApi.getTradesTicks(market, to, count, cursor, daysAgo)
-        val response = callSync.execute()
+        val call = QuotationApi.getTradesTicks(market, to, count, cursor, daysAgo)
+        val response = call.execute()
 
         // Then
         println("url: ${response.raw().request().url()}")
@@ -179,8 +179,8 @@ internal class QuotationApiTest {
         val markets = "KRW-BTC, KRW-ETH"
 
         // When
-        val callSync = QuotationApi.getTicker(markets)
-        val response = callSync.execute()
+        val call = QuotationApi.getTicker(markets)
+        val response = call.execute()
 
         // Then
         println("url: ${response.raw().request().url()}")
@@ -206,8 +206,8 @@ internal class QuotationApiTest {
         )
 
         // When
-        val callSync = QuotationApi.getOrderbook(markets)
-        val response = callSync.execute()
+        val call = QuotationApi.getOrderbook(markets)
+        val response = call.execute()
 
         // Then
         println("url: ${response.raw().request().url()}")

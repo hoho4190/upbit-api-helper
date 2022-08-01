@@ -21,8 +21,8 @@ internal class BoardApiTest {
         val perPage = 20
 
         // When
-        val callSync = BoardApi.getNoticeList(page, perPage)
-        val response = callSync.execute()
+        val call = BoardApi.getNoticeList(page, perPage)
+        val response = call.execute()
 
         // Then
         println("url: ${response.raw().request().url()}")
@@ -47,8 +47,8 @@ internal class BoardApiTest {
         val perPage = 20
 
         // When
-        val callSync = BoardApi.getNewsList(page, perPage)
-        val response = callSync.execute()
+        val call = BoardApi.getNewsList(page, perPage)
+        val response = call.execute()
 
         // Then
         println("url: ${response.raw().request().url()}")
@@ -74,8 +74,8 @@ internal class BoardApiTest {
         val region = "kr"
 
         // When
-        val callSync = BoardApi.getDisclosureList(perPage, offset, region)
-        val response = callSync.execute()
+        val call = BoardApi.getDisclosureList(perPage, offset, region)
+        val response = call.execute()
 
         // Then
         println("url: ${response.raw().request().url()}")

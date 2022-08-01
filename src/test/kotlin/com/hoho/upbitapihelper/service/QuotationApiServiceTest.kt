@@ -53,8 +53,8 @@ internal class QuotationApiServiceTest {
         val isDetails = true
 
         // When
-        val callSync = apiService.getMarketAll(isDetails)
-        val response = callSync.execute()
+        val call = apiService.getMarketAll(isDetails)
+        val response = call.execute()
 
         // Then
         Assertions.assertTrue(response.isSuccessful)
@@ -74,8 +74,8 @@ internal class QuotationApiServiceTest {
         val count: Int? = 3
 
         // When
-        val callSync = apiService.getCandlesMinutes(unit, market, to, count)
-        val response = callSync.execute()
+        val call = apiService.getCandlesMinutes(unit, market, to, count)
+        val response = call.execute()
 
         // Then
         Assertions.assertTrue(response.isSuccessful)
@@ -95,8 +95,8 @@ internal class QuotationApiServiceTest {
         val convertingPriceUnit: String? = "KRW"
 
         // When
-        val callSync = apiService.getCandlesDays(market, to, count, convertingPriceUnit)
-        val response = callSync.execute()
+        val call = apiService.getCandlesDays(market, to, count, convertingPriceUnit)
+        val response = call.execute()
 
         // Then
         Assertions.assertTrue(response.isSuccessful)
@@ -115,8 +115,8 @@ internal class QuotationApiServiceTest {
         val count: Int? = 3
 
         // When
-        val callSync = apiService.getCandlesWeeks(market, to, count)
-        val response = callSync.execute()
+        val call = apiService.getCandlesWeeks(market, to, count)
+        val response = call.execute()
 
         // Then
         Assertions.assertTrue(response.isSuccessful)
@@ -135,8 +135,8 @@ internal class QuotationApiServiceTest {
         val count: Int? = 3
 
         // When
-        val callSync = apiService.getCandlesMonths(market, to, count)
-        val response = callSync.execute()
+        val call = apiService.getCandlesMonths(market, to, count)
+        val response = call.execute()
 
         // Then
         Assertions.assertTrue(response.isSuccessful)
@@ -157,8 +157,8 @@ internal class QuotationApiServiceTest {
         val daysAgo: Int? = 2
 
         // When
-        val callSync = apiService.getTradesTicks(market, to, count, cursor, daysAgo)
-        val response = callSync.execute()
+        val call = apiService.getTradesTicks(market, to, count, cursor, daysAgo)
+        val response = call.execute()
 
         // Then
         Assertions.assertTrue(response.isSuccessful)
@@ -175,8 +175,8 @@ internal class QuotationApiServiceTest {
         val markets = "KRW-BTC, KRW-ETH"
 
         // When
-        val callSync = apiService.getTicker(markets)
-        val response = callSync.execute()
+        val call = apiService.getTicker(markets)
+        val response = call.execute()
 
         // Then
         Assertions.assertTrue(response.isSuccessful)
@@ -196,8 +196,8 @@ internal class QuotationApiServiceTest {
         )
 
         // When
-        val callSync = apiService.getOrderbook(markets)
-        val response = callSync.execute()
+        val call = apiService.getOrderbook(markets)
+        val response = call.execute()
 
         // Then
         Assertions.assertTrue(response.isSuccessful)

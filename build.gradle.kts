@@ -9,7 +9,7 @@ plugins {
 }
 
 group = "com.hoho"
-version = "1.0.2"
+version = "1.0.3"
 
 publishing {
     repositories {
@@ -52,8 +52,7 @@ dependencies {
     // java-jwt
     implementation("com.auth0:java-jwt:4.0.0")
 
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.2")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
+    testImplementation(kotlin("test"))
 
     // mockwebserver
     testImplementation("com.squareup.okhttp3:mockwebserver:3.14.9")

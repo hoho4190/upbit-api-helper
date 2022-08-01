@@ -53,8 +53,8 @@ internal class ApiManagerServiceTest {
         val perPage = 3
 
         // When
-        val callSync = amService.getNotices(page, perPage)
-        val response = callSync.execute()
+        val call = amService.getNotices(page, perPage)
+        val response = call.execute()
 
         // Then
         Assertions.assertTrue(response.isSuccessful)
@@ -72,8 +72,8 @@ internal class ApiManagerServiceTest {
         val perPage = 3
 
         // When
-        val callSync = amService.getNews(page, perPage)
-        val response = callSync.execute()
+        val call = amService.getNews(page, perPage)
+        val response = call.execute()
 
         // Then
         Assertions.assertTrue(response.isSuccessful)

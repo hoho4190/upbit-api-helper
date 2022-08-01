@@ -28,8 +28,8 @@ class ExchangeApiTest {
         // Given
 
         // When
-        val callSync = ExchangeApi.getAccounts(openApiKey)
-        val response = callSync.execute()
+        val call = ExchangeApi.getAccounts(openApiKey)
+        val response = call.execute()
 
         // Then
         println("url: ${response.raw().request().url()}")
@@ -52,8 +52,8 @@ class ExchangeApiTest {
         val market = "KRW-BTC"
 
         // When
-        val callSync = ExchangeApi.getOrdersChance(openApiKey, market)
-        val response = callSync.execute()
+        val call = ExchangeApi.getOrdersChance(openApiKey, market)
+        val response = call.execute()
 
         // Then
         println("url: ${response.raw().request().url()}")
@@ -75,8 +75,8 @@ class ExchangeApiTest {
         val uuid = "uuid"
 
         // When
-        val callSync = ExchangeApi.getOrderByUuid(openApiKey, uuid)
-        val response = callSync.execute()
+        val call = ExchangeApi.getOrderByUuid(openApiKey, uuid)
+        val response = call.execute()
 
         // Then
         println("url: ${response.raw().request().url()}")
@@ -98,8 +98,8 @@ class ExchangeApiTest {
         val identifier = "identifier"
 
         // When
-        val callSync = ExchangeApi.getOrderByIdentifier(openApiKey, identifier)
-        val response = callSync.execute()
+        val call = ExchangeApi.getOrderByIdentifier(openApiKey, identifier)
+        val response = call.execute()
 
         // Then
         println("url: ${response.raw().request().url()}")
@@ -145,11 +145,11 @@ class ExchangeApiTest {
         orderBy = OrderBy.ASC
 
         // When
-        val callSync = ExchangeApi.getOrdersByUuid(
+        val call = ExchangeApi.getOrdersByUuid(
             openApiKey,
             market, uuids, state, states, page, limit, orderBy
         )
-        val response = callSync.execute()
+        val response = call.execute()
 
         // Then
         println("url: ${response.raw().request().url()}")
@@ -195,11 +195,11 @@ class ExchangeApiTest {
 //        orderBy = OrderBy.ASC
 
         // When
-        val callSync = ExchangeApi.getOrdersByIdentifier(
+        val call = ExchangeApi.getOrdersByIdentifier(
             openApiKey,
             market, identifiers, state, states, page, limit, orderBy
         )
-        val response = callSync.execute()
+        val response = call.execute()
 
         // Then
         println("url: ${response.raw().request().url()}")
@@ -222,8 +222,8 @@ class ExchangeApiTest {
         val uuid = "uuid"
 
         // When
-        val callSync = ExchangeApi.deleteOrderByUuid(openApiKey, uuid)
-        val response = callSync.execute()
+        val call = ExchangeApi.deleteOrderByUuid(openApiKey, uuid)
+        val response = call.execute()
 
         // Then
         println("url: ${response.raw().request().url()}")
@@ -245,8 +245,8 @@ class ExchangeApiTest {
         val identifier = "identifier"
 
         // When
-        val callSync = ExchangeApi.deleteOrderByIdentifier(openApiKey, identifier)
-        val response = callSync.execute()
+        val call = ExchangeApi.deleteOrderByIdentifier(openApiKey, identifier)
+        val response = call.execute()
 
         // Then
         println("url: ${response.raw().request().url()}")
@@ -272,8 +272,8 @@ class ExchangeApiTest {
         println("지정가 매수 identifier=$identifier")
 
         // When
-        val callSync = ExchangeApi.postOrdersBidLimit(openApiKey, market, price, volume, identifier)
-        val response = callSync.execute()
+        val call = ExchangeApi.postOrdersBidLimit(openApiKey, market, price, volume, identifier)
+        val response = call.execute()
 
         // Then
         println("url: ${response.raw().request().url()}")
@@ -302,8 +302,8 @@ class ExchangeApiTest {
         println("지정가 매도 identifier=$identifier")
 
         // When
-        val callSync = ExchangeApi.postOrdersAskLimit(openApiKey, market, price, volume, identifier)
-        val response = callSync.execute()
+        val call = ExchangeApi.postOrdersAskLimit(openApiKey, market, price, volume, identifier)
+        val response = call.execute()
 
         // Then
         println("url: ${response.raw().request().url()}")
@@ -331,8 +331,8 @@ class ExchangeApiTest {
         println("시장가 매수 identifier=$identifier")
 
         // When
-        val callSync = ExchangeApi.postOrdersBidPrice(openApiKey, market, price, identifier)
-        val response = callSync.execute()
+        val call = ExchangeApi.postOrdersBidPrice(openApiKey, market, price, identifier)
+        val response = call.execute()
 
         // Then
         println("url: ${response.raw().request().url()}")
@@ -360,8 +360,8 @@ class ExchangeApiTest {
         println("시장가 매도 identifier=$identifier")
 
         // When
-        val callSync = ExchangeApi.postOrdersAskMarket(openApiKey, market, volume, identifier)
-        val response = callSync.execute()
+        val call = ExchangeApi.postOrdersAskMarket(openApiKey, market, volume, identifier)
+        val response = call.execute()
 
         // Then
         println("url: ${response.raw().request().url()}")
@@ -382,8 +382,8 @@ class ExchangeApiTest {
         // Given
 
         // When
-        val callSync = ExchangeApi.getWalletStatus(openApiKey)
-        val response = callSync.execute()
+        val call = ExchangeApi.getWalletStatus(openApiKey)
+        val response = call.execute()
 
         // Then
         println("url: ${response.raw().request().url()}")
@@ -405,8 +405,8 @@ class ExchangeApiTest {
         // Given
 
         // When
-        val callSync = ExchangeApi.getApiKeys(openApiKey)
-        val response = callSync.execute()
+        val call = ExchangeApi.getApiKeys(openApiKey)
+        val response = call.execute()
 
         // Then
         println("url: ${response.raw().request().url()}")
